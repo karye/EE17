@@ -3,16 +3,29 @@ body {
 }
 table {
     background-color: aquamarine;
+    padding: 20px;
+    border-spacing: 5px;
+    width: 900px;
+}
+caption {
+    background-color: darkcyan;
+    color: rgb(255, 255, 255);
+    font-family: 'Chango', cursive;
+    font-size: 60px;
+    padding: 50px;
 }
 tr {
-
+    font-family: 'Roboto', sans-serif;
 }
 th {
     background-color: #ffff80;
+    padding: 10px;
 }
 td {
     background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
 }
 img {
-    width: 130px;
+    width: 100px;
 }
