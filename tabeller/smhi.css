@@ -1,0 +1,22 @@
+body {
+
+}
+table {
+    font-family: sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #CCC;
+}
+tr {
+
+}
+th {
+    border-bottom: 1px solid #CCC;
+    padding: 10px;
+}
+td {
+    border-bottom: 1px solid #CCC;
+    padding: 10px;
+}
+img {
+    width: 50px;
+}
