@@ -22,7 +22,7 @@ div.kontainer {
     width: 800px;
     padding: 30px;
     color: #FFF;
-    background: #641F0E;
+    background: linear-gradient(to bottom, #627d4d 0%,#1f3b08 100%);
     margin: 20px auto;
     border-radius: 5px;
 }
@@ -35,7 +35,7 @@ h1 {
 div.ros {
     font-family: 'Slabo 27px', serif;
     font-size: 18px;
-    background: #589706;
+    background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); 
     padding: 30px;
     margin-top: 20px;
     border-radius: 5px;
