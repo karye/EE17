@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Roboto+Slab');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidans layout */
+body {
+
+}
+.kontainer {
+    width: 800px;
+    background: #AAA;
+    padding: 50px;
+    margin: 20px auto;
+    font-family: 'Roboto Slab', serif;
+    color: #FFF;
+}
+
+/* Menyn */
+ul {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+li {
+    display: inline;
+    list-style-type: none;
+}
+li a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #FFF;
+    background: #666;
+    border-radius: 20px;
+}
+li a:hover {
+    background: #FFF;
+    color: #000;
+}
+li a.current {
+    background: #FFF;
+    color: #000;
+}
+
+/* Sidans innehåll */
+h1 {
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    font-size: 70px;
+    text-shadow: 0 0 10px #000;
+}
+h2 {
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 0 0 10px #000;
+}
+img {
+    margin: 20px auto;
+    display: block;
+    border-radius: 20px;
+}
+p {
+    margin: 20px 0;
+}
+.sidfot {
+    color: #000;
+}
