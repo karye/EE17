@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grunder i Javascript</title>
+</head>
+<body>
+    <h1>Grunder i Javascript</h1>
+    <p id="adress">Hemlig adress</p>
+    <p id="mobil">Hemlig mobil</p>
+
+    <button onclick="visaAdress()">Visa adress</button>
+    <button onclick="visaMobil()">Visa mobil</button>
+    <p onclick="visaEasterEgg()">Visa easter egg</p>
+
+    <script>
+        function visaAdress() {
+            /* Ansluta till p-elementet som jag vill ändra på */
+            var eleAdress = document.querySelector('#adress');
+            /* Skriv texten inuti p-elementet */
+            eleAdress.textContent = 'Follingbogatan 26, 16860 Bromma';
+        }
+        function visaMobil() {
+            /* Ansluta till p-elementet som jag vill ändra på */
+            var eleMobil = document.querySelector('#mobil');
+            /* Skriv texten inuti p-elementet */
+            eleMobil.textContent = '070675765765';
+        }
+        function visaEasterEgg() {
+            /* Ansluta till p-elementet som jag vill ändra på */
+            var eleRubrik = document.querySelector('h1');
+            /* Skriv texten inuti h1-elementet */
+            eleRubrik.textContent = 'Lolcatz!!!';
+            /* Ändra stilen på h1-elemenbet */
+            eleRubrik.style.color = 'red';
+
+            /* Anslut till body-elementet */
+            var eleBody = document.querySelector('body');
+            /* Ändra bakgrunden till svart */
+            eleBody.style.backgroundColor = '#000';
+            /* Lägg till bakgrundsbild */
+            eleBody.style.backgroundImage = 'url("./bilder/nukem.jpg")';
+
+            /* Infoga en bild i sidan */
+            eleRubrik.insertAdjacentHTML('afterend', '<img src="./bilder/giphy.webp">');
+        }
+    </script>
+</body>
+</html>
