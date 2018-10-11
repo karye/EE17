@@ -7,14 +7,22 @@
 </head>
 <body>
     <h1>Grunder i Javascript</h1>
+    <p>Hemlig text</p>
     <p id="adress">Hemlig adress</p>
     <p id="mobil">Hemlig mobil</p>
 
+    <button onclick="visaText()">Klicka mig!</button>
     <button onclick="visaAdress()">Visa adress</button>
     <button onclick="visaMobil()">Visa mobil</button>
     <p onclick="visaEasterEgg()">Visa easter egg</p>
 
     <script>
+        function visaText() {
+            /* Ansluta till p-elementet som jag vill ändra på */
+            var element = document.querySelector('p');
+            /* Skriv texten inuti p-elementet */
+            element.textContent = 'Hej på dig!';
+        }
         function visaAdress() {
             /* Ansluta till p-elementet som jag vill ändra på */
             var eleAdress = document.querySelector('#adress');
@@ -41,6 +49,7 @@
             eleBody.style.backgroundColor = '#000';
             /* Lägg till bakgrundsbild */
             eleBody.style.backgroundImage = 'url("./bilder/nukem.jpg")';
+            eleBody.textContent = '';
 
             /* Infoga en bild i sidan */
             eleRubrik.insertAdjacentHTML('afterend', '<img src="./bilder/giphy.webp">');
