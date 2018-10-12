@@ -1,9 +1,9 @@
-/* Våra globala variabler */
-/* Skapa ett slumptal mellan 1 och 100 */
-var slumptal = Math.ceil(Math.random() * 100);
+/* Våra element i HTML vi läser/skriver */
 var elementGissning = document.querySelector('#gissning');
 var elementSvar = document.querySelector('#svar');
 
+/* Skapa ett slumptal mellan 1 och 100 */
+var slumptal = Math.ceil(Math.random() * 100);
 console.log('Nytt slumptal: ' + slumptal);
 
 /* Reagera på när man trycker på knappen */
