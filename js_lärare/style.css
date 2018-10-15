@@ -1,5 +1,5 @@
 body {
-    background: #000;
+    background: #212121;
 }
 .kontainer {
     width: 400px;
@@ -7,9 +7,6 @@ body {
     padding: 30px;
     background-color: rgb(253, 249, 192);
     border-radius: 5px;
-}
-label {
-    display: inline-block;
 }
 input {
     width: 100px;
@@ -33,8 +30,9 @@ p {
     background: rgb(216, 0, 0);
 }
 .yipee {
-    background: lightseagreen;
+    background: #283f82;
     color: #FFF;
+    margin-top: 10px;
 }
 button {
     width: 150px;
