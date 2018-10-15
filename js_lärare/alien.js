@@ -1,3 +1,5 @@
+/* https://www.smashingmagazine.com/2018/02/freebie-hand-drawn-space-icons/ */
+
 /* När webbsidan laddtas klart kör start() */
 window.onload = start;
 
@@ -7,7 +9,6 @@ function start() {
 }
 
 /* Kör-delen */
-/* Ikoner från https://www.smashingmagazine.com/2018/02/freebie-hand-drawn-space-icons/ */
 
 /* Infoga en text på sidan när du klickar på knapp 1: Här kommer freebies Space ikoner */
 
