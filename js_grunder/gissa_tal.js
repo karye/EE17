@@ -28,18 +28,18 @@ function gissa() {
     /* Om gissning > slumptal, skriv ut "För högt" */
     if (gissning > slumptal) {
         svar = '<p class="hogt">' + antal + ') ' + gissning + ' för högt!</p>';
-        elementSvar.insertAdjacentHTML( 'beforeend', svar);
+        elementSvar.insertAdjacentHTML('beforeend', svar);
     }
 
     /* Om gissning < slumptal, skriv ut "För lågt" */
     if (gissning < slumptal) {
         svar = '<p class="lagt">' + antal + ') ' + gissning + ' för lågt!</p>';
-        elementSvar.insertAdjacentHTML( 'beforeend', svar);
+        elementSvar.insertAdjacentHTML('beforeend', svar);
     }
 
     /* Om gissning > 100, skriv ut "Är du dum!" */
     if (gissning > 100) {
         svar = '<p class="dum">' + antal + ') ' + gissning + ' är du dum!</p>';
-        elementSvar.insertAdjacentHTML( 'beforeend', svar);
+        elementSvar.insertAdjacentHTML('beforeend', svar);
     }
 }
