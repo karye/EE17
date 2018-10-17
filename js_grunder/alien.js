@@ -46,7 +46,7 @@ function start() {
         'ikoner/astronaut-helmet-64x64.png',
         'ikoner/earth-64x64.png'];
     function infogaSlumpBild() {
-        var slump = Math.ceil(Math.random() * 7);
+        var slump = Math.ceil(Math.random() * 7 - 1);
         elementDiv.innerHTML += '<img src="./' + ikoner[slump] + '" alt="Ikon">';
     }
 }
