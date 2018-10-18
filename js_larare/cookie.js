@@ -5,14 +5,13 @@ window.onload = start;
 
 /* Start-delen */
 function start() {
-    
+
+    /* Knapp 1: skriv ut en cookie i loggen */
+
+    /* Knapp 2: skriv ut cookie i webbsidan */
+
+    /* Knapp 3: skriv ut nya cookies en-efter-en som en lista */
+
+    /* Slumpa fram cookies */
+
 }
-
-/* Kör-delen */
-/* Skriv ut en cookie i loggen */
-
-/* Skriv ut cookie i webbsidan */
-
-/* Slumpa fram en cookie */
-
-/* Skriv ut nya cookies en-efter-en som en lista */

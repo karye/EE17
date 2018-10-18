@@ -5,9 +5,8 @@ window.onload = start;
 
 /* Start-delen */
 function start() {
-    /* Kör-delen */
+    
     /* Infoga en text på sidan när du klickar på knapp 1: Här kommer freebies Space ikoner */
-    /*  */
     const elementFire = document.querySelector('.fire');
     console.log(elementFire);
     const elementIce = document.querySelector('.ice');
