@@ -4,7 +4,7 @@
  * Användaren räknar ut summan
  */
 
-/* Kör koden när webbsidan laddtas klart */
+/* Kör koden när webbsidan laddats klart */
 window.onload = start;
 
 function start() {
