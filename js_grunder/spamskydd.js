@@ -9,27 +9,27 @@ window.onload = start;
 
 function start() {
 
-    /* Skapar globala variabler */
+    /* Skapar globala variabler tal1 och tal2 */
 
 
     /* Slumpa fram två tal */
 
 
     /* Skriv ut frågan */
-    /* 1. Ta tag i target som vi vill jobba med */
+    /* 1. Skapa en target till elementet */
     /* 2. Skriv ut, tex "Vad är 2+3?"; */
 
-    /* Aktivera knappen, dvs lyssna på knappen */
+    /* lyssna på knappen */
     /* 1. Ta tag i knappen */
     /* 2. Lyssna på knappen */
 
-    /* En funktion */
+    /* En funktion som körs när man klickat på knappen */
         /* Läs in det som användaren skriver i textrutan */
         /* 1. Ta tag i textrutan */
         /* 2. Läs av innehållet */
 
 
-        /* Jämför summa med svaret */
+        /* Om svaret = tal1 + tal2 */
 
             /* Skriv ut svar: "Rätt svar, du är en människa!" */
 
