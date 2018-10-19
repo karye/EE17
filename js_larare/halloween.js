@@ -8,6 +8,9 @@ window.onload = start;
 /* Start-delen */
 function start() {
 
+    /* Hämta alla element */
+    const elementRutor = document.querySelectorAll('.ruta');
+
     /* Lyssna på klick på hela sidan */
     const elementKontainer = document.querySelector('.grid');
     elementKontainer.addEventListener('click', klick);
@@ -29,13 +32,26 @@ function start() {
     function tittaEfter(div) {
         console.log('tittaEfter');
         
-        /* Läs av doldt tal */
+        /* Läs av dolt tal */
         var tal = div.textContent;
 
         /* Visa dolda bilden */
         if (tal == slumptal) {
-            div.classList.add('hit');
+            /* Animera en effekt så pumpa visas */
+            div.classList.add('hit', 'animated', 'flipInY');
+
+            /* Ta bort resterande rutor */
+            for (const elementRuta of elementRutor) {
+                if (!elementRuta.classList.contains('animated')) {
+                    elementRuta.classList.add('animated', 'zoomOut');
+                }
+                elementRuta.style.cursor = "auto";
+            }
+
+            /* Sluta lyssna på klick */
+            elementKontainer.removeEventListener('click', klick);
         } else {
+            /* Animera en effekt så rutan försvinner */
             div.classList.add('animated', 'zoomOut');
         }
     }
