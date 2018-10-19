@@ -10,19 +10,28 @@ window.onload = start;
 function start() {
     
     /* Välj ut alla elementen att jobba med: target */
-
+    ???
+    ???
+    ???
+    ???
+    ???
 
     /* Lyssna på knapparna */
+    ???
+    ???
+    ???
 
-
-    /* Gör fotot suddigt */
+    /* Funktion för att göra fotot suddigt */
     function suddigt() {
-
+        ???
+        ???
+        ???
     }
 
-    /* Gör fotot gråskala */
+    /* Funktion för att göra fotot gråskala */
+    ???
 
-
-    /* Gör fotot sepia-färgat */
+    /* Funktion för att göra fotot sepia-färgat */
+    ???
 
 }
