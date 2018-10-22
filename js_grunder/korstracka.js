@@ -10,25 +10,25 @@ window.onload = start;
 function start() {
 
     /* Välj ut alla elementen att jobba med: target */
-    const elementHastighet = document.querySelector('.hastighet');
-    const elemenTid = document.querySelector('.tid');
-    const elementRaknaUt = document.querySelector('.raknaUt');
-    const elementSvar = document.querySelector('.svar');
+    ???
+    ???
+    ???
+    ???
 
     /* Lyssna på knappen */
-    elementRaknaUt.addEventListener('click', raknaUt);
+    ???
 
     /* Räkna ut avståndet */
     function raknaUt() {
         
         /* Läs av hastigheten och tiden */
-        var hastighet = elementHastighet.textContent;
-        var tid = elemenTid.textContent;
+        ???
+        ???
 
         /* Räkna ut avståndet = hastigheten * tid */
-        var avstand = hastighet * tid / 60;
+        var avstand = ???;
 
         /* Skriv ut resultatet tex 'Körsträckan blir 57 km.' */
-        elementSvar.textContent = 'Körsträckan blir ' + avstand + ' km.';
+        ???
     }
 }
