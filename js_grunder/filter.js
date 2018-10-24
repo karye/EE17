@@ -10,28 +10,36 @@ window.onload = start;
 function start() {
     
     /* Välj ut alla elementen att jobba med: target */
-    ???
-    ???
-    ???
-    ???
-    ???
+    const elementSuddig = document.querySelector('#suddigKnapp');
+    const elementGraskala = document.querySelector('#graskalaKnapp');
+    const elementSepia = document.querySelector('#sepiaKnapp');
+    const elementFoto = document.querySelector('img');
+    const elementOutput = document.querySelector('.output');
 
     /* Lyssna på knapparna */
-    ???
-    ???
-    ???
+    elementSuddig.addEventListener('click', suddigt);
+    elementGraskala.addEventListener('click', graskala);
+    elementSepia.addEventListener('click', sepia);
 
-    /* Funktion för att göra fotot suddigt */
+    /* Gör fotot suddigt */
     function suddigt() {
-        ???
-        ???
-        ???
+        elementFoto.classList.remove('suddigt', 'graskala', 'sepia');
+        elementFoto.classList.add('suddigt');
+        /* elementFoto.classList.value = 'suddigt'; */
+        elementOutput.textContent = 'Använder filter: blur(5px)';
     }
 
-    /* Funktion för att göra fotot gråskala */
-    ???
+    /* Gör fotot gråskala */
+    function graskala() {
+        elementFoto.classList.remove('suddigt', 'graskala', 'sepia');
+        elementFoto.classList.add('graskala');
+        elementOutput.textContent = 'Använder filter: grayscale(80%)';
+    }
 
-    /* Funktion för att göra fotot sepia-färgat */
-    ???
-
+    /* Gör fotot sepia-färgat */
+    function sepia() {
+        elementFoto.classList.remove('suddigt', 'graskala', 'sepia');
+        elementFoto.classList.add('sepia');
+        elementOutput.textContent = 'Använder filter: sepia(60%)';
+    }
 }

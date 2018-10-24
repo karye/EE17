@@ -3,7 +3,7 @@
 * 
 */
 
-/* När webbsidan laddtas klart kör start() */
+/* När webbsidan laddats klart kör start() */
 window.onload = start;
 
 /* Start-delen */
@@ -11,14 +11,14 @@ function start() {
     
     /* Välj ut alla elementen att jobba med: target */
     const elementSuddigt = document.querySelector('.knappSuddigt');
-    const elementGra = document.querySelector('.knappGra');
+    const elementGraskala = document.querySelector('.knappGra');
     const elementSepia = document.querySelector('.knappSepia');
     const elementFoto = document.querySelector('img');
     const elementOutput = document.querySelector('.output');
 
     /* Lyssna på knapparna */
     elementSuddigt.addEventListener('click', suddigt);
-    elementGra.addEventListener('click', graskala);
+    elementGraskala.addEventListener('click', graskala);
     elementSepia.addEventListener('click', sepia);
 
     /* Gör fotot suddigt */
