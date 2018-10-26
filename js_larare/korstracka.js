@@ -22,8 +22,8 @@ function start() {
     function raknaUt() {
         
         /* Läs av hastigheten och tiden */
-        var hastighet = elementHastighet.value;
-        var tid = elemenTid.value;
+        var hastighet = Number(elementHastighet.value);
+        var tid = Number(elemenTid.value);
 
         /* Räkna ut avståndet = hastigheten * tid */
         var avstand = hastighet * tid / 60;

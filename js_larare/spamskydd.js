@@ -37,7 +37,7 @@ function start() {
         /* 1. Ta tag i textrutan */
         const elementSumman = document.querySelector("#summan");
         /* 2. Läs av innehållet */
-        var summa = elementSumman.value;
+        var summa = Number(elementSumman.value);
         console.log(summa);
 
         /* Jämför summa med svaret */

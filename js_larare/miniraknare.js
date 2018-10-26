@@ -3,31 +3,81 @@ window.onload = start;
 
 function start() {
 
-    /* Elementen vi jobbar med */
-    const ...
-    const ...
-    const ...
-    const ...
+    /* HTML-elementen vi jobbar med */
+    const elementTal1 = document.querySelector('#tal1');
+    const elementTal2 = document.querySelector('#tal2');
+    const elementResultat = document.querySelector('#resultat');
+    const elementPlus = document.querySelector('#plus');
+    const elementMinus = document.querySelector('#minus');
+    const elementGanger = document.querySelector('#ganger');
+    const elementDividera = document.querySelector('#dividera');
     
-    /* Lyssna på knapp Plus */
-    ...addEventListener(...)
+    /* Lyssna på knapp plus */
+    elementPlus.addEventListener('click', plus);
+
+    /* Lyssna på knapp minus */
+    elementMinus.addEventListener('click', minus);
+
+    /* Lyssna på knapp gånger */
+    elementGanger.addEventListener('click', ganger);
+
+    /* Lyssna på knapp dividera */
+    elementDividera.addEventListener('click', dividera);
 
     /* Addera tal1 + tal2 = resultat */
-    /* Läs av värdet av inputruta 1 */
-    var ... = ....value;
-    /* Läs av värdet av inputruta 2 */
-    var ... = ....value;
+    function plus() {
+        /* Läs av värdet av inputruta 1 */
+        var tal1 = parseInt(elementTal1.value);
+        /* Läs av värdet av inputruta 2 */
+        var tal2 = parseInt(elementTal2.value);
 
-    /* Summera */
-    var resultat = ... + ...
+        /* Summera */
+        var resultat = tal1 + tal2;
 
-    /* Skriv resultatet i inputruta 3 */
-    ....value = ...
+        /* Skriv resultatet i inputruta 3 */
+        elementResultat.value = resultat;
+    }
 
     /* Knappen - (minus) */
+    function minus() {
+        /* Läs av värdet av inputruta 1 */
+        var tal1 = elementTal1.value;
+        /* Läs av värdet av inputruta 2 */
+        var tal2 = elementTal2.value;
+
+        /* Summera */
+        var resultat = tal1 - tal2;
+
+        /* Skriv resultatet i inputruta 3 */
+        elementResultat.value = resultat;
+    }
 
     /* Knappen * (gånger) */
+    function ganger() {
+        /* Läs av värdet av inputruta 1 */
+        var tal1 = elementTal1.value;
+        /* Läs av värdet av inputruta 2 */
+        var tal2 = elementTal2.value;
+
+        /* Summera */
+        var resultat = tal1 * tal2;
+
+        /* Skriv resultatet i inputruta 3 */
+        elementResultat.value = resultat;
+    }
 
     /* Knappen / (dividera) */
+    function dividera() {
+        /* Läs av värdet av inputruta 1 */
+        var tal1 = elementTal1.value;
+        /* Läs av värdet av inputruta 2 */
+        var tal2 = elementTal2.value;
+
+        /* Summera */
+        var resultat = tal1 / tal2;
+
+        /* Skriv resultatet i inputruta 3 */
+        elementResultat.value = resultat;
+    }
     
 }
