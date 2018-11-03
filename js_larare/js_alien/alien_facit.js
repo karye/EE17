@@ -37,13 +37,13 @@ function start() {
     /* Extra uppgift infoga slumpvis vald ikon */
     elementDiv.addEventListener('click', infogaSlumpBild);
     var ikoner = [
-        'ikoner/alien-1-64x64.png',
-        'ikoner/alien-3-64x64.png',
-        'ikoner/alien-5-64x64.png',
-        'ikoner/alien-ship-64x64.png',
-        'ikoner/asteroid-2-64x64.png',
-        'ikoner/astronaut-helmet-64x64.png',
-        'ikoner/earth-64x64.png'];
+        '../ikoner/alien-1-64x64.png',
+        '../ikoner/alien-3-64x64.png',
+        '../ikoner/alien-5-64x64.png',
+        '../ikoner/alien-ship-64x64.png',
+        '../ikoner/asteroid-2-64x64.png',
+        '../ikoner/astronaut-helmet-64x64.png',
+        '../ikoner/earth-64x64.png'];
     function infogaSlumpBild() {
         var slump = Math.ceil(Math.random() * 7 - 1);
         elementDiv.innerHTML += '<img src="./' + ikoner[slump] + '" alt="Ikon">';
