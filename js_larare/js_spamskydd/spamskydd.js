@@ -9,6 +9,11 @@ window.onload = start;
 
 function start() {
 
+    /* Ta tag i elementet som vi vill jobba med */
+    const elementFragan = ???;
+    /* Ta tag i knappen */
+    const elementKnappen = ???;
+
     /* Skapar globala variabler */
     var tal1, tal2;
 
@@ -17,16 +22,11 @@ function start() {
     tal2 = ???;
 
     /* Skriv ut frågan */
-    /* 1. Ta tag i elementet som vi vill jobba med */
-    const elementFragan = ???;
-    /* 2. Skriv ut */
-    /* eleFragan.textContent = Tex "Vad är 2+3?"; */
+    /* Tex "Vad är 2+3?"; */
     elementFragan.textContent = ???;
 
     /* Aktivera knappen, dvs lyssna på knappen */
-    /* 1. Ta tag i knappen */
-    const elementKnappen = ???;
-    /* 2. Lyssna på knappen */
+    /* Lyssna på knappen */
     elementKnappen.addEventListener(???);
 
     function spamSkydd() {
@@ -36,6 +36,7 @@ function start() {
         /* Läs in det som användaren skriver i textrutan summa */
         /* 1. Ta tag i textrutan */
         const elementSvar = ???;
+        
         /* 2. Läs av innehållet */
         var svar = Number(???);
         console.log(svar);

@@ -4,13 +4,13 @@ window.onload = start;
 function start() {
 
     /* HTML-elementen vi jobbar med */
-    const elementTal1 = document.querySelector('#tal1');
-    const elementTal2 = document.querySelector('#tal2');
-    const elementResultat = document.querySelector('#resultat');
-    const elementPlus = document.querySelector('#plus');
-    const elementMinus = document.querySelector('#minus');
-    const elementGanger = document.querySelector('#ganger');
-    const elementDividera = document.querySelector('#dividera');
+    const elementTal1 = document.querySelector('.tal1');
+    const elementTal2 = document.querySelector('.tal2');
+    const elementResultat = document.querySelector('.resultat');
+    const elementPlus = document.querySelector('.plus');
+    const elementMinus = document.querySelector('.minus');
+    const elementGanger = document.querySelector('.ganger');
+    const elementDividera = document.querySelector('.dividera');
     
     /* Lyssna på knapp plus */
     elementPlus.addEventListener('click', plus);
