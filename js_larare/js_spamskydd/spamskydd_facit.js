@@ -35,21 +35,22 @@ function start() {
 
         /* Läs in det som användaren skriver i textrutan summa */
         /* 1. Ta tag i textrutan */
-        const elementSumman = document.querySelector("#summan");
+        const elementSvar = document.querySelector("#svar");
         /* 2. Läs av innehållet */
-        var summa = Number(elementSumman.value);
-        console.log(summa);
+        var svar = Number(elementSvar.value);
+        console.log(svar);
 
         /* Jämför summa med svaret */
-        if (summa == (tal1 + tal2)) {
+        if (svar == (tal1 + tal2)) {
             console.log("Rätt!");
 
             /* Skriv ut svar: "Rätt svar, du är en människa!" */
-
+            elementSvar.textContent = "Rätt svar, du är en människa!";
         } else {
             console.log("Fel!");
 
             /* Skriv ut svar: "Fel svar, du en robot eller en människa som räknar fel!" */
+            elementSvar.textContent = "Fel svar, du en robot eller en människa som räknar fel!";
         }
     }
 }

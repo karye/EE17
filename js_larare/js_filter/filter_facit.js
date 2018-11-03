@@ -1,6 +1,5 @@
 /* 
-* Testar tre oilka filter p åen bild.
-* 
+* Testar tre oilka filter på en bild.* Testar tre oilka filter på en bild.
 */
 
 /* När webbsidan laddats klart kör start() */
