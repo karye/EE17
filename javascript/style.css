@@ -42,6 +42,14 @@ p {
 }
 button {
     background: rgb(1, 114, 6);
+    border: none;
+    padding: 10px;
     color: rgb(255, 255, 255);
     font-weight: bold;
+}
+.output {
+    margin: 20px;
+    padding: 20px;
+    background: #c9c9c9;
+    border-radius: 10px;
 }

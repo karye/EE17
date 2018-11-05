@@ -24,7 +24,6 @@ function start() {
     elementFriend.addEventListener('click', infogaText);
     function infogaText() {
         console.log('There is a true and sincere friendship between you and your friends.');
-
     }
 
     /* Knapp 2: skriv ut cookie i webbsidan */
