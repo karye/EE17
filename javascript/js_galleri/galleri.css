@@ -50,3 +50,13 @@ button {
 button:hover {
     background: greenyellow;
 }
+.miniatyr {
+    width: 50px;
+    margin: 0 10px;
+    border-radius: 3px;
+    border: 1px solid #FFF;
+    cursor: pointer;
+}
+.miniatyr:hover {
+    filter: opacity(50%);
+}

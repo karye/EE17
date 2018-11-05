@@ -11,16 +11,16 @@ function start() {
     /* Vilka element arbetar vi med? */
     const elementImg = document.querySelector('.bild img');
     const elementP = document.querySelector('.bild p');
-    const elementKnapp1 = document.querySelector('.knapp1');
-    const elementKnapp2 = document.querySelector('.knapp2');
-    const elementKnapp3 = document.querySelector('.knapp3');
-    const elementKnapp4 = document.querySelector('.knapp4'); 
+    const elementMiniatyr1 = document.querySelector('.knapp1');
+    const elementMiniatyr2 = document.querySelector('.knapp2');
+    const elementMiniatyr3 = document.querySelector('.knapp3');
+    const elementMiniatyr4 = document.querySelector('.knapp4'); 
 
     /* Vilka händelser behöver vi lyssna på? */
-    elementKnapp1.addEventListener('click', visaBild1);
-    elementKnapp2.addEventListener('click', visaBild2);
-    elementKnapp3.addEventListener('click', visaBild3);
-    elementKnapp4.addEventListener('click', visaBild4);
+    elementMiniatyr1.addEventListener('click', visaBild1);
+    elementMiniatyr2.addEventListener('click', visaBild2);
+    elementMiniatyr3.addEventListener('click', visaBild3);
+    elementMiniatyr4.addEventListener('click', visaBild4);
 
     /* Vad ska hända när man klickat på knapp1? */
     function visaBild1() {
