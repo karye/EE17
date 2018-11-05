@@ -1,5 +1,6 @@
 /* 
-* När man klickar på en knapp byts bilden ut till aktuell bild.
+* Enkelt bildgalleri.
+* Visa bilden större när man klickar på knappen.
 */
 
 /* När webbsidan laddats klart kör start() */
