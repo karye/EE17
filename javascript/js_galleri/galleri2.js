@@ -16,30 +16,18 @@ function start() {
     const elementMiniatyr3 = document.querySelector('.knapp3');
     const elementMiniatyr4 = document.querySelector('.knapp4'); 
 
-    /* Vilka händelser behöver vi lyssna på? */
-    elementMiniatyr1.addEventListener('click', visaBild1);
-    elementMiniatyr2.addEventListener('click', visaBild2);
-    elementMiniatyr3.addEventListener('click', visaBild3);
-    elementMiniatyr4.addEventListener('click', visaBild4);
+    /* Klicka på en knapp */
+    elementMiniatyr1.addEventListener('click', visaBild);
+    elementMiniatyr2.addEventListener('click', visaBild);
+    elementMiniatyr3.addEventListener('click', visaBild);
+    elementMiniatyr4.addEventListener('click', visaBild);
 
-    /* Vad ska hända när man klickat på knapp1? */
-    function visaBild1() {
-        elementImg.src = '../bilder/jpeg/michael-olsen-584366-unsplash.jpg';
-        elementP.textContent = 'Photo by Michael Olsen';
-    }
-    /* Vad ska hända när man klickat på knapp2? */
-    function visaBild2() {
-        elementImg.src = '../bilder/jpeg/diogo-sousa-457381-unsplash.jpg';
-        elementP.textContent = 'Photo by Diogo Sousa';
-    }
-    /* Vad ska hända när man klickat på knapp3? */
-    function visaBild3() {
-        elementImg.src = '../bilder/jpeg/kees-streefkerk-352781-unsplash.jpg';
-        elementP.textContent = 'Photo by Kees Streefkerk';
-    }
-    /* Vad ska hända när man klickat på knapp4? */
-    function visaBild4() {
-        elementImg.src = '../bilder/jpeg/jose-duarte-317893-unsplash.jpg';
-        elementP.textContent = 'Photo by Jose Duarte';
+    /* Visa motsvarande stor bild och skriv ut bildtexten */
+    function visaBild() {
+        console.log(this.dataset.bild);
+        
+
+/*         elementImg.src = '../bilder/jpeg/david-dibert-499250-unsplash.jpg';
+        elementP.textContent = 'Phóto by David Dibert'; */
     }
 }
