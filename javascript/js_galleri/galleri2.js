@@ -27,7 +27,7 @@ function start() {
         console.log(this.dataset.bild);
         
 
-/*         elementImg.src = '../bilder/jpeg/david-dibert-499250-unsplash.jpg';
+/*         elementImg.src = '../bilder/david-dibert-499250-unsplash.jpg';
         elementP.textContent = 'Phóto by David Dibert'; */
     }
 }
