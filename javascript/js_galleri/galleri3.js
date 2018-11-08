@@ -1,7 +1,7 @@
 window.onload = start;
 
 function start() {
-    const elementYta = document.querySelector('.yta');
+    const elementBild = document.querySelector('.bild');
     const elementVanster = document.querySelector('.fa-arrow-left');
     const elementHoger = document.querySelector('.fa-arrow-right');
 
@@ -20,14 +20,22 @@ function start() {
     var index = 0;
 
     function bytBild() {
-        console.log(this.dataset.pil);
-
         if (this.dataset.pil == 'hoger') {
             index++;
+        } else {
+            index--;
         }
 
-        console.log(bilder[index]);
-        
-        elementYta.style.cssText = 'background: url(' + bilder[index] + ') no-repeat center;';
+        if (index == -1) {
+            index = bilder.length - 1;
+        }
+        if (index == bilder.length) {
+            index = 0;
+        }
+
+        /* elementYta.style.cssText = 'background: url(' + bilder[index] + ') no-repeat center;'; */
+
+        elementBild.innerHTML = '<img src=' + bilder[index] + '>';
+        elementBild.firstChild.classList.add('fadeIn');
     }
 }

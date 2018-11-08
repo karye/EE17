@@ -27,7 +27,7 @@ h1 {
 }
 .yta {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     justify-content: space-between;
     align-items: center;
     height: 600px;
@@ -39,4 +39,7 @@ h1 {
 i {
     font-size: 50px;
     cursor: pointer;
+}
+.bild img {
+    width: 600px;
 }
