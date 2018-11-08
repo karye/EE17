@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
 
 /* Enkel CSS-reset */
 html {
@@ -12,31 +12,34 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 
+/* Sidans utseende */
 body {
     background: #000;
 }
 .kontainer {
-    font-family: 'Rubik', sans-serif;
     width: 800px;
     margin: 20px auto;
     color: #FFF;
 }
 h1 {
-    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 50px;
+    text-align: center;
 }
 .yta {
+    background: rgba(255, 255, 255, 0.203);
+    height: 600px;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
-    align-items: center;
-    height: 600px;
-    background: rgba(255, 255, 255, 0.178);
+    align-content: center;
     padding: 50px;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 i {
     font-size: 50px;
     cursor: pointer;
+    transition-duration: 1s;
+}
+i:hover {
+    color: rgb(141, 141, 141)
 }
