@@ -43,3 +43,6 @@ i {
 i:hover {
     color: rgb(141, 141, 141)
 }
+.dold {
+    visibility: hidden;
+}
