@@ -8,7 +8,7 @@ function start() {
     const elementPunkter = document.querySelector('.punkter');
 
     /* Lista på alla bilder */
-    var bildLista = [
+    let bildLista = [
         './foton/chris-lawton-475897-unsplash.jpg',
         './foton/colin-watts-1138048-unsplash.jpg',
         './foton/ezra-comeau-jeffrey-336626-unsplash.jpg',
@@ -22,15 +22,21 @@ function start() {
     ];
 
     /* Position på bilden man tittar på */
-    var index = 0;
+    let index = 0;
 
     /* Visa första bilden */
     elementYta.style.cssText = 'background: url("' + bildLista[0] + '") no-repeat center;';
 
-    /* Skapa alla punkter */
+    /* Fyll i alla punkter */
     for (let i = 0; i < bildLista.length; i++) {
         elementPunkter.innerHTML += '<i class="fas fa-circle"></i>';
     }
+
+    /* Plockat ut ut alla element som är punkter */
+    const punkter = elementPunkter.querySelectorAll('i');
+
+    /* Aktivera första punkten */
+    punkter[0].classList.toggle('vald');
 
     /* Lyssna på knapparna */
     elementVanster.addEventListener('click', bytBild);
@@ -38,6 +44,9 @@ function start() {
 
     /* Byter bild */
     function bytBild() {
+        /* Avaktivera aktuell punkt */
+        punkter[index].classList.toggle('vald');
+
         /* Om man klickat på pil höger */
         if (this.dataset.riktning == 'höger') {
             index++;
@@ -48,12 +57,12 @@ function start() {
             index--;
         }
 
-        /* Om man går förbi 0, dvs -1, ta bort vänster knapp */
+        /* Om man går förbi 0, dvs -1, hoppa till sista bilden */
         if (index == -1) {
             index = bildLista.length - 1;
         }
 
-        /* Om man går förbi sista, ta bort höger knapp */
+        /* Om man går förbi sista, hoppa till första bilden */
         if (index == bildLista.length) {
             index = 0;
         }
@@ -62,5 +71,28 @@ function start() {
 
         /* Byt ut bakgrundsbilden */
         elementYta.style.cssText = 'background: url("' + bildLista[index] + '") no-repeat center;';
+
+        /* Aktivera nästa punkt */
+        punkter[index].classList.toggle('vald');
+    }
+
+    /* Starta rullande slideshow */
+    setInterval(rullaBilder, 1000);
+    function rullaBilder() {
+        /* Avaktivera aktuell punkt */
+        punkter[index].classList.toggle('vald');
+
+        index++;
+
+        /* Om man går förbi sista, hoppa till första bilden */
+        if (index == bildLista.length) {
+            index = 0;
+        }
+
+        /* Byt ut bakgrundsbilden */
+        elementYta.style.cssText = 'background: url("' + bildLista[index] + '") no-repeat center;';
+
+        /* Avaktivera aktuell punkt */
+        punkter[index].classList.toggle('vald');
     }
 }

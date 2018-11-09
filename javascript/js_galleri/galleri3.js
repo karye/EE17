@@ -33,9 +33,7 @@ function start() {
             index = 0;
         }
 
-        /* elementYta.style.cssText = 'background: url(' + bilder[index] + ') no-repeat center;'; */
-
-        elementBild.innerHTML = '<img src=' + bilder[index] + '>';
+        elementBild.innerHTML = '<img class="animated" src=' + bilder[index] + '>';
         elementBild.firstChild.classList.add('fadeIn');
     }
 }

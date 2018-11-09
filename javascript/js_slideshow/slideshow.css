@@ -30,7 +30,7 @@ h1 {
     background: rgba(255, 255, 255, 0.203);
     height: 600px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     justify-content: space-between;
     align-content: center;
     padding: 50px;
@@ -39,10 +39,18 @@ i {
     font-size: 50px;
     cursor: pointer;
     transition-duration: 1s;
+    align-self: center;
 }
 i:hover {
     color: rgb(141, 141, 141)
 }
-.dold {
-    visibility: hidden;
+.punkter {
+    margin-top: 400px;
+}
+.fa-circle {
+    font-size: 20px;
+    margin: 5px;
+}
+.vald {
+    color: #666;
 }
