@@ -11,8 +11,8 @@ function start() {
 
     /* Skapar globala variabler tal1 och tal2 */
     /* Slumpa fram två tal */
-    var tal1 = Math.ceil(Math.random() * 40);
-    var tal2 = Math.ceil(Math.random() * 40);
+    let tal1 = Math.ceil(Math.random() * 40);
+    let tal2 = Math.ceil(Math.random() * 40);
 
     /* Skriv ut frågan */
     /* 1. Skapa en target till elementet */
@@ -33,7 +33,7 @@ function start() {
         /* 1. Ta tag i textrutan */
         /* 2. Läs av innehållet in i en variabel */
         const elementSumman = document.querySelector('.summan');
-        var summan = elementSumman.value;
+        let summan = elementSumman.value;
 
         const elementSvaret = document.querySelector('.svaret');
 

@@ -14,12 +14,12 @@ function start() {
 
     /* Adera tal1 + tal2 = resultat */
     /* Läs av värdet av inputruta 1 */
-    var ... = ....value;
+    let ... = ....value;
     /* Läs av värdet av inputruta 2 */
-    var ... = ....value;
+    let ... = ....value;
 
     /* Summera */
-    var resultat = ... + ...
+    let resultat = ... + ...
 
     /* Skriv resultatet i inputruta 3 */
     ....value = ...

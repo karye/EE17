@@ -41,7 +41,7 @@ function start() {
 
     /* Slumpa fram cookies */
     elementKnapp4.addEventListener('click', slumpaCookies);
-    var cookies = [
+    let cookies = [
         'There is a true and sincere friendship between you and your friends.',
         'You find beauty in ordinary things, do not lose this ability.',
         'Ideas are like children; there are none so wonderful as your own.',
@@ -55,7 +55,7 @@ function start() {
     ];
 
     function slumpaCookies() {
-        var slumpTal = Math.ceil(Math.random() * 10 - 1);
+        let slumpTal = Math.ceil(Math.random() * 10 - 1);
         elementDiv.innerHTML += cookies[slumpTal] + '<br>';
     }
 }

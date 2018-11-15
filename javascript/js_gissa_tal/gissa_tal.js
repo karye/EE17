@@ -1,13 +1,13 @@
 /* Våra element i HTML vi läser/skriver */
-var elementGissning = document.querySelector('#gissning');
-var elementSvar = document.querySelector('#svar');
+let elementGissning = document.querySelector('#gissning');
+let elementSvar = document.querySelector('#svar');
 
 /* Skapa ett slumptal mellan 1 och 100 */
-var slumptal = Math.ceil(Math.random() * 100);
+let slumptal = Math.ceil(Math.random() * 100);
 console.log('Nytt slumptal: ' + slumptal);
 
 /* Antal försök */
-var antal = 0;
+let antal = 0;
 
 /* Reagera på när man trycker på knappen */
 function gissa() {
@@ -16,7 +16,7 @@ function gissa() {
     antal++;
 
     /* Läsa av gissningen i första input-rutan*/
-    var gissning = elementGissning.value;
+    let gissning = elementGissning.value;
     console.log('Gissningen: ' + gissning);
 
     /* Om gissning = slumptal, då har man vunnit */
