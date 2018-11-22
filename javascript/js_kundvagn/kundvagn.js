@@ -4,7 +4,7 @@
 * 2. När man klickar på plus fylls rutan "total" med varans pris
 * 3. Dessutom skall man addera varans pris till "total"
 * 4. När man klickar på plus skall antalet varor räknas upp
-* 5. Och priset för vald fraktsät skall visas i rutan "frakt"
+* 5. Och priset för vald fraktsätt skall visas i rutan "frakt"
 */
 window.onload = start;
 
@@ -17,7 +17,6 @@ function start() {
     /* Element vi behöver komma åt */
     const eSkorPris = document.querySelector('#skorPris');
     const eSkorAntal = document.querySelector('#skorAntal');
-    console.log(eSkorAntal);
 
     const eByxaPris = document.querySelector('#byxaPris');
     const eByxaAntal = document.querySelector('#byxaAntal');
