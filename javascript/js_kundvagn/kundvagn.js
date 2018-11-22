@@ -6,3 +6,95 @@
 * 4. När man klickar på plus skall antalet varor räknas upp
 * 5. Och priset för vald fraktsät skall visas i rutan "frakt"
 */
+window.onload = start;
+
+function start() {
+    /* Variabler */
+    var skorAntal = 0;
+    var byxaAntal = 0;
+    var mossaAntal = 0;
+
+    /* Element vi behöver komma åt */
+    const eSkorPris = document.querySelector('#skorPris');
+    const eSkorAntal = document.querySelector('#skorAntal');
+    console.log(eSkorAntal);
+
+    const eByxaPris = document.querySelector('#byxaPris');
+    const eByxaAntal = document.querySelector('#byxaAntal');
+
+    const eMossaPris = document.querySelector('#mossaPris');
+    const eMossaAntal = document.querySelector('#mossaAntal');
+    
+    const eFrakt = document.querySelector('#frakt');
+    const eTotal = document.querySelector('#total');
+
+    const eSkorPlus = document.querySelector('#skorPlus');
+    const eByxaPlus = document.querySelector('#byxaPlus');
+    const eMossaPlus = document.querySelector('#mossaPlus');
+    
+    const eLevForetag = document.querySelectorAll('input[name="frakt"]');
+
+    /* Läs av priset på varorna och skriv ut dom i konsolen */
+    console.log(eSkorPris.value);
+    console.log(eByxaPris.value);
+    console.log(eMossaPris.value);
+    
+    /* När man klickar på plus fylls rutan "total" med varans pris */
+    eSkorPlus.addEventListener('click', laggTillSkor);
+    function laggTillSkor() {
+        skorAntal += 1;
+        eSkorAntal.value = skorAntal;
+
+        /* Vad kostar frakten? */
+        if (eLevForetag[0].checked) {
+            eFrakt.value = eLevForetag[0].value;
+        }
+        if (eLevForetag[1].checked) {
+            eFrakt.value = eLevForetag[1].value;
+        }
+        if (eLevForetag[2].checked) {
+            eFrakt.value = eLevForetag[2].value;
+        }
+
+        /* Räkna ut totalen */
+        eTotal.value = eSkorPris.value * skorAntal + eByxaPris.value * byxaAntal + eMossaPris.value * mossaAntal + Number(eFrakt.value);
+    }
+    eByxaPlus.addEventListener('click', laggTillByxa);
+    function laggTillByxa() {
+        byxaAntal += 1;
+        eByxaAntal.value = byxaAntal;
+
+        /* Vad kostar frakten? */
+        if (eLevForetag[0].checked) {
+            eFrakt.value = eLevForetag[0].value;
+        }
+        if (eLevForetag[1].checked) {
+            eFrakt.value = eLevForetag[1].value;
+        }
+        if (eLevForetag[2].checked) {
+            eFrakt.value = eLevForetag[2].value;
+        }
+
+        /* Räkna ut totalen */
+        eTotal.value = eSkorPris.value * skorAntal + eByxaPris.value * byxaAntal + eMossaPris.value * mossaAntal + Number(eFrakt.value);
+    }
+    eMossaPlus.addEventListener('click', laggTillMossa);
+    function laggTillMossa() {
+        mossaAntal += 1;
+        eMossaAntal.value = mossaAntal;
+
+        /* Vad kostar frakten? */
+        if (eLevForetag[0].checked) {
+            eFrakt.value = eLevForetag[0].value;
+        }
+        if (eLevForetag[1].checked) {
+            eFrakt.value = eLevForetag[1].value;
+        }
+        if (eLevForetag[2].checked) {
+            eFrakt.value = eLevForetag[2].value;
+        }
+
+        /* Räkna ut totalen */
+        eTotal.value = eSkorPris.value * skorAntal + eByxaPris.value * byxaAntal + eMossaPris.value * mossaAntal + Number(eFrakt.value);
+    }
+}

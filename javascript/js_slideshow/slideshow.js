@@ -77,7 +77,7 @@ function start() {
     }
 
     /* Starta rullande slideshow */
-    setInterval(rullaBilder, 1000);
+    /* setInterval(rullaBilder, 1000); */
     function rullaBilder() {
         /* Avaktivera aktuell punkt */
         punkter[index].classList.toggle('vald');
