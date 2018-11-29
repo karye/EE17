@@ -14,7 +14,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 
 /* Sidans layout */
 body {
-
+    background: #000;
 }
 .kontainer {
     width: 800px;
@@ -23,6 +23,7 @@ body {
     margin: 20px auto;
     font-family: 'Roboto Slab', serif;
     color: #FFF;
+    box-shadow: 2px 2px 4px;
 }
 
 /* Menyn */
