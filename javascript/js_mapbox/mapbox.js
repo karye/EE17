@@ -6,10 +6,10 @@ var map = new mapboxgl.Map({
     zoom: 12 // starting zoom
 });
 
-var marker1 = new mapboxgl.Marker()  // Här skapar vi en marker
+var marker1 = new mapboxgl.Marker() // Här skapar vi en marker
     .setLngLat([17.90, 59.36])      // Här ger vi markern en position
     .addTo(map);                    // Här lägger vi till markern på kartan
 
-var marker2 = new mapboxgl.Marker()  // Här skapar vi en marker
+var marker2 = new mapboxgl.Marker() // Här skapar vi en marker
     .setLngLat([17.91, 59.35])      // Här ger vi markern en position
     .addTo(map);                    // Här lägger vi till markern på kartan
