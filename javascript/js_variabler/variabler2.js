@@ -13,21 +13,15 @@ function start() {
         /* Läs av innehållet i rutan */
         let talet = Number(eTalet.value);
 
-        /* Gör beräkningen */
-        let summaNed = talet - 1;
-
         /* Skriv ut resultatet */
-        eTalet.value = summaNed;
+        eTalet.value = talet - 1;
     }
 
     function raknaUpp() {
         /* Läs av innehållet i rutan */
         let talet = Number(eTalet.value);
 
-        /* Gör beräkningen */
-        let summaNed = talet + 1;
-
         /* Skriv ut resultatet */
-        eTalet.value = summaNed;
+        eTalet.value = talet + 1;
     }
 }
