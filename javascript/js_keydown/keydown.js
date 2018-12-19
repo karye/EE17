@@ -33,15 +33,16 @@ function start() {
         }
         console.log(x + " " + y);
         
-        if (x > window.innerWidth) {
+        /* När skeppet når kanter börja om på andra sidan */
+        if (x > window.innerWidth - 100) {
             x = 0;
         } else if (x < 0) {
-            x = window.innerWidth - 20;
+            x = window.innerWidth - 100;
         }
-        if (y > window.innerHeight) {
+        if (y > window.innerHeight - 100) {
             y = 0;
         } else if (y < 0) {
-            y = window.innerHeight - 20;
+            y = window.innerHeight - 100;
         }
 
         /* Flytta på skeppet */
