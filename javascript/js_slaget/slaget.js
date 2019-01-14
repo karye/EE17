@@ -7,3 +7,11 @@ Ett slag innebär att motståndaren blir av med en slumpmässig mängd hp.
 När striden är slut, presentera vinnaren – eller om båda slagskämparna kom under 0 samtidigt, förklara att det blev oavgjort.
 VIKTIGT: Om du får mycket hjälp av en kamrat, skriv det i dina kommentarer!
 */
+
+window.onload = start;
+
+/* Koden som körs från start */
+function start() {
+    
+    
+}
