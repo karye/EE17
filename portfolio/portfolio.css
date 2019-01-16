@@ -12,15 +12,18 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 
 /* Hela layouten */
 body {
-
+    background: url("./bilder/jeremy-thomas-98201-unsplash.jpg");
+    background-attachment: fixed;
 }
 .kontainer {
-
+    width: 960px;
+    margin: auto;
+    font-family: sans-serif;
 }
 
 /* Sidhuvudet */
 header {
-
+    color: #FFF;
 }
 header h1 {
 
@@ -29,24 +32,33 @@ header h2 {
 
 }
 header nav {
-
+    background: linear-gradient(to right, #595959 0%,#e0cccc 100%);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0;
 }
 header ul {
 
 }
 header li {
+    display: inline;
 
 }
 header a {
-    
+    text-decoration: none;
+    color: #FFF;
 }
 
 /* Sidans innehåll */
 main {
-
+    display: grid;
+    grid-template-columns: 650px 280px;
+    justify-content: space-between;
 }
 main .innehall {
-
+    background:#FFF;
+    border-radius: 5px;
+    padding: 20px;
 }
 main article {
 
@@ -58,7 +70,7 @@ main figure {
 
 }
 main img {
-
+    width: 500px;
 }
 main figcaption {
 
@@ -72,10 +84,12 @@ main a {
 
 /* Sidebar */
 aside {
-
 }
 aside section {
-
+    background: #FFF;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 aside h4 {
 
