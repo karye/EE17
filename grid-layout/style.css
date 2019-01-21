@@ -1,0 +1,64 @@
+/* Utseende */
+.kontainer {
+    width: 100%;
+    margin: 50px auto;
+}
+header, nav, main, aside, .reklam, footer {
+    background: #ffe600;
+    border: 2px solid #aa9c1f;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Layout */
+header {
+    grid-area: sidhuvudet;
+}
+nav {
+    grid-area: menyn;
+}
+main {
+    grid-area: innehallet;
+}
+aside {
+    grid-area: sidebar;
+}
+.reklam {
+    grid-area: reklamen;
+}
+footer {
+    grid-area: sidfoten;
+}
+
+.kontainer {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    "sidhuvudet"
+    "menyn"
+    "innehallet"
+    "sidebar"
+    "reklamen"
+    "sidfoten"
+}
+@media (min-width: 500px) {
+    .kontainer {
+
+    }
+    nav li {
+
+    }
+}
+@media (min-width: 700px) {
+    .kontainer {
+
+    }
+    nav li {
+
+    }
+}
+@media (min-width: 1000px) {
+    .kontainer {
+
+    }
+}
