@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Roboto+Slab');
+
 /* Enkel CSS-reset */
 html {
     box-sizing: border-box;
@@ -18,15 +20,17 @@ body {
 .kontainer {
     width: 960px;
     margin: auto;
-    font-family: sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 /* Sidhuvudet */
 header {
     color: #FFF;
+    font-family: 'Roboto Slab', serif;
 }
 header h1 {
-
+    font-size: 60px;
+    margin: 10px 0;
 }
 header h2 {
 
@@ -42,23 +46,30 @@ header ul {
 }
 header li {
     display: inline;
-
+    margin: 5px 10px;
 }
 header a {
     text-decoration: none;
     color: #FFF;
 }
+header a:hover {
+    color: #805506;
+}
 
 /* Sidans innehåll */
 main {
     display: grid;
+    grid-gap: 20px;
     grid-template-columns: 650px 280px;
     justify-content: space-between;
+    grid-template-areas: 
+    "innehall sidebar"
 }
 main .innehall {
-    background:#FFF;
+    background:#ffffffbb;
     border-radius: 5px;
     padding: 20px;
+    grid-area: innehall;
 }
 main article {
 
@@ -79,34 +90,36 @@ main p {
 
 }
 main a {
-
+    text-decoration: none;
+    color: chocolate;
 }
 
 /* Sidebar */
-aside {
+main aside {
+    grid-area: sidebar;
 }
-aside section {
-    background: #FFF;
+main aside section {
+    background: #ffffffbb;
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
 }
-aside h4 {
+main aside h4 {
 
 }
-aside ul {
+main aside ul {
 
 }
-aside li {
-
+main aside li {
+    list-style: none;
 }
-aside a {
-
+main aside a {
+    text-decoration: none;
+    color: chocolate;
 }
 
 /* Sidfoten */
 footer {
-
 }
 footer p {
 
