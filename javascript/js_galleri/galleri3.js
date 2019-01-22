@@ -8,7 +8,7 @@ function start() {
     elementVanster.addEventListener('click', bytBild);
     elementHoger.addEventListener('click', bytBild);
 
-    let bilder = [
+    var bilder = [
         './bilder/chris-lawton-475897-unsplash.jpg',
         './bilder/ezra-comeau-jeffrey-336626-unsplash.jpg',
         './bilder/ghost-presenter-1076897-unsplash.jpg',

@@ -13,11 +13,11 @@ function start() {
     eKnapp1.addEventListener("click", addera);
     function addera() {
         /* Läsa av innehållet på rutorna */
-        let tal1 = Number(eRuta1.value);
-        let tal2 = Number(eRuta2.value);
+        var tal1 = Number(eRuta1.value);
+        var tal2 = Number(eRuta2.value);
 
         /* Addera tal1 + tal2 */
-        let summa = tal1 + tal2;
+        var summa = tal1 + tal2;
 
         /* Skriv ut summa i ruta 3 */
         eRuta3.value = summa;
@@ -27,11 +27,11 @@ function start() {
     eKnapp2.addEventListener("click", subtrahera);
     function subtrahera() {
         /* Läsa av innehållet på rutorna */
-        let tal1 = Number(eRuta1.value);
-        let tal2 = Number(eRuta2.value);
+        var tal1 = Number(eRuta1.value);
+        var tal2 = Number(eRuta2.value);
 
         /* Addera tal1 + tal2 */
-        let subtraktion = tal1 - tal2;
+        var subtraktion = tal1 - tal2;
 
         /* Skriv ut summa i ruta 3 */
         eRuta4.value = subtraktion;

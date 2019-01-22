@@ -5,8 +5,8 @@ function start() {
     const eAlien = document.querySelector("img");
 
     /* Skeppets position */
-    let x = 0;
-    let y = 0;
+    var x = 0;
+    var y = 0;
 
     console.log(window.innerWidth);
     console.log(window.innerHeight);

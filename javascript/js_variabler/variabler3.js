@@ -8,7 +8,7 @@ function start() {
     const eBild = document.querySelector("img");
 
     /* Lista på spelkaraktärer */
-    let listaKarak = [
+    var listaKarak = [
         "Sonic",    // 0
         "Mario",    // 1
         "Vault Boy",  // 2
@@ -21,7 +21,7 @@ function start() {
         "The Lemmings"     // 9
     ];
 
-    let listaBilder = [
+    var listaBilder = [
         "https://cdn.empireonline.com/jpg/50/0/0/640/480/aspectfit/0/0/0/0/0/0/c/features/560ec14650e6c513721c3993/sonic-hedgehog-nintendo.jpg",
         "https://cdn.empireonline.com/jpg/50/0/0/640/480/aspectfit/0/0/0/0/0/0/c/features/560ec14650e6c513721c3993/mario-smash-bros.jpg",
         "https://cdn.empireonline.com/jpg/50/0/0/640/480/aspectfit/0/0/0/0/0/0/c/features/560ec14650e6c513721c3993/fallout-vault-boy.jpg",
@@ -39,7 +39,7 @@ function start() {
 
     function slumpaTal() {
         /* Skapa ett slumptal 1-10*/
-        let slumptal = Math.ceil(Math.random() * 10 - 1);
+        var slumptal = Math.ceil(Math.random() * 10 - 1);
 
         /* Skriv ut slumptalet i rutan */
         /* Rutans värde skall vara slumptalet */

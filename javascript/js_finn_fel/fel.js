@@ -9,8 +9,8 @@ function start() {
     elementKnapp.addEventListener('click', area);
 
     function area() {
-        let bredd, hojd;
-        let area;
+        var bredd, hojd;
+        var area;
 
         bredd = Number(elementInput1.value);
         hojd = Number(elementInput2.value);

@@ -8,7 +8,7 @@ function start() {
     const elementPunkter = document.querySelector('.punkter');
 
     /* Lista på alla bilder */
-    let bildLista = [
+    var bildLista = [
         './foton/chris-lawton-475897-unsplash.jpg',
         './foton/colin-watts-1138048-unsplash.jpg',
         './foton/ezra-comeau-jeffrey-336626-unsplash.jpg',
@@ -22,13 +22,13 @@ function start() {
     ];
 
     /* Position på bilden man tittar på */
-    let index = 0;
+    var index = 0;
 
     /* Visa första bilden */
     elementYta.style.cssText = 'background: url("' + bildLista[0] + '") no-repeat center;';
 
     /* Fyll i alla punkter */
-    for (let i = 0; i < bildLista.length; i++) {
+    for (var i = 0; i < bildLista.length; i++) {
         elementPunkter.innerHTML += '<i class="fas fa-circle"></i>';
     }
 

@@ -16,15 +16,15 @@ function start() {
     function registreraKvitto() {
         
         /* Läs av alla värden */
-        let godkand = eGodkand.checked;
-        let giltig = eGiltig.checked;
-        let betalt = eBetalt.checked;
-        let momssats = eMomssats.value;
-        let belopp = Number(eBelopp.value);
+        var godkand = eGodkand.checked;
+        var giltig = eGiltig.checked;
+        var betalt = eBetalt.checked;
+        var momssats = eMomssats.value;
+        var belopp = Number(eBelopp.value);
         console.log(godkand + " " + giltig + " " + betalt + " " + momssats + " " + belopp);
         
         /* Räkna ut belopp plus vald momssats */
-        let total = belopp * (1 + momssats / 100);
+        var total = belopp * (1 + momssats / 100);
 
         /* Om kvittot är godkänt, giltigt och betalt så fyll i totalen */
         if (godkand && giltig && betalt ) {

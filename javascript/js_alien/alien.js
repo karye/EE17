@@ -36,7 +36,7 @@ function start() {
 
     /* Extra uppgift infoga slumpvis vald ikon */
     elementOutput.addEventListener("click", infogaSlumpBild);
-    let ikoner = [
+    var ikoner = [
         "ikoner/alien-3-64x64.png",
         "ikoner/alien-5-64x64.png",
         "ikoner/alien-1-64x64.png",
@@ -46,7 +46,7 @@ function start() {
         "ikoner/earth-64x64.png"];
         
     function infogaSlumpBild() {
-        let slump = Math.ceil(Math.random() * 7 - 1);
+        var slump = Math.ceil(Math.random() * 7 - 1);
         elementOutput.innerHTML += "<img src=\"../\"" + ikoner[slump] + "alt=\"Ikon\">";
     }
 }

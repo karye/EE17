@@ -7,7 +7,7 @@ var map = new mapboxgl.Map({
 });
 
 /* En lista på positioner */
-let positioner = [
+var positioner = [
     [18.0465, 59.3373],
     [18.051522, 59.343276],
     [18.0479766, 59.3386843],
@@ -15,7 +15,7 @@ let positioner = [
     [18.0461658, 59.339032]
 ];
 /* Lista på beskrivningar till positionerna */
-let beskrivningar = [
+var beskrivningar = [
     "NTI Stockholm",
     "Burger King",
     "Flippin' Burgers",
@@ -24,19 +24,19 @@ let beskrivningar = [
 ];
 
 /* Loopa igenom listan och placera ut markers på kartan */
-/* for (let index = 0; index < positioner.length; index++) {
-    let popup = new mapboxgl.Popup({ // Här skapar vi en popup
+/* for (var index = 0; index < positioner.length; index++) {
+    var popup = new mapboxgl.Popup({ // Här skapar vi en popup
             offset: 25
         })
         .setText(beskrivningar[index]);
 
-    let marker = new mapboxgl.Marker() // Här skapar vi en marker
+    var marker = new mapboxgl.Marker() // Här skapar vi en marker
         .setLngLat(positioner[index]) // Här ger vi markern en position
         .setPopup(popup)
         .addTo(map); // Här lägger vi till markern på kartan
 } */
 
-let lista = [
+var lista = [
     [18.0465, 59.3373, "NTI Stockholm"],
     [18.051522, 59.343276, "Burger King"],
     [18.0479766, 59.3386843, "Flippin' Burgers"],
@@ -44,7 +44,7 @@ let lista = [
     [18.0461658, 59.339032, "ICA Supermarket Sabbatsberg"]
 ];
 
-let popup, marker;
+var popup, marker;
 for (const key in lista) {
     popup = new mapboxgl.Popup({ // Här skapar vi en popup
         offset: 25

@@ -19,20 +19,20 @@ function start() {
     const eButton = document.querySelector("#knapp");
 
     /* Ange hp vid start */
-    let hp1 = 100;
-    let hp2 = 100;
+    var hp1 = 100;
+    var hp2 = 100;
 
     eButton.addEventListener("click", runda);
     function runda() {
         /* Läs in namnen på spelarna */
-        let spelare1 = eInput1.value;
-        let spelare2 = eInput2.value;
+        var spelare1 = eInput1.value;
+        var spelare2 = eInput2.value;
         console.log("spelare1 =" + spelare1);
         console.log("spelare2 =" + spelare2);
 
         /* Slumpa ett tal mellan 1 och 10 */
-        let slumptal1 = Math.ceil(Math.random() * 10 + 1);
-        let slumptal2 = Math.ceil(Math.random() * 10 + 1);
+        var slumptal1 = Math.ceil(Math.random() * 10 + 1);
+        var slumptal2 = Math.ceil(Math.random() * 10 + 1);
 
         /* Drav slumptal från hp */
         hp1 = hp1 - slumptal1;

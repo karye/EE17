@@ -9,7 +9,7 @@ function start() {
     elementGrid.addEventListener('click', lucka);
 
     /* Vinsten någonstans mellan 1 och 24 */
-    let vinst = Math.ceil(Math.random() * 23 + 1);
+    var vinst = Math.ceil(Math.random() * 23 + 1);
     console.log(vinst);
 
     /* Öppna en lucka */

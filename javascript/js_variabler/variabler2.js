@@ -11,7 +11,7 @@ function start() {
 
     function raknaNed() {
         /* Läs av innehållet i rutan */
-        let talet = Number(eTalet.value);
+        var talet = Number(eTalet.value);
 
         /* Skriv ut resultatet */
         eTalet.value = talet - 1;
@@ -19,7 +19,7 @@ function start() {
 
     function raknaUpp() {
         /* Läs av innehållet i rutan */
-        let talet = Number(eTalet.value);
+        var talet = Number(eTalet.value);
 
         /* Skriv ut resultatet */
         eTalet.value = talet + 1;
