@@ -12,7 +12,7 @@ function start() {
     /* Lyssna på knapp Plus */
     ...addEventListener(...)
 
-    /* Adera tal1 + tal2 = resultat */
+    /* Addera tal1 + tal2 = resultat */
     /* Läs av värdet av inputruta 1 */
     let ... = ....value;
     /* Läs av värdet av inputruta 2 */

@@ -1,45 +1,51 @@
-/* Våra element i HTML vi läser/skriver */
-let elementGissning = document.querySelector('#gissning');
-let elementSvar = document.querySelector('#svar');
+window.onload = start();
 
-/* Skapa ett slumptal mellan 1 och 100 */
-let slumptal = Math.ceil(Math.random() * 100);
-console.log('Nytt slumptal: ' + slumptal);
+function start() {
+    /* Våra element i HTML som vi läser/skriver */
+    const elementGissning = document.querySelector("#gissning");
+    const elementKnapp = document.querySelector("button");
+    const elementSvar = document.querySelector("#svar");
 
-/* Antal försök */
-let antal = 0;
+    /* Skapa ett slumptal mellan 1 och 100 */
+    var slumptal = Math.ceil(Math.random() * 100);
+    console.log("Nytt slumptal: " + slumptal);
 
-/* Reagera på när man trycker på knappen */
-function gissa() {
+    /* Antal försök */
+    var antal = 0;
 
-    /* Räkna upp */
-    antal++;
+    /* Reagera på när man trycker på knappen */
+    elementKnapp.addEventListener("click", gissa);
+    function gissa() {
 
-    /* Läsa av gissningen i första input-rutan*/
-    let gissning = elementGissning.value;
-    console.log('Gissningen: ' + gissning);
+        /* Räkna upp */
+        antal++;
 
-    /* Om gissning = slumptal, då har man vunnit */
-    if (gissning == slumptal) {
-        svar = '<p class="animated yipee">' + antal + ') ' + gissning + ' Yippee! Du har vunnit äran!</p>';
-        elementSvar.insertAdjacentHTML('beforeend', svar);
-    }
+        /* Läsa av gissningen i första input-rutan*/
+        var gissning = elementGissning.value;
+        console.log("Gissningen: " + gissning);
 
-    /* Om gissning > slumptal, skriv ut "För högt" */
-    if (gissning > slumptal) {
-        svar = '<p class="hogt">' + antal + ') ' + gissning + ' för högt!</p>';
-        elementSvar.insertAdjacentHTML('beforeend', svar);
+        /* Om gissning = slumptal, då har man vunnit */
+        if (gissning == slumptal) {
+            svar = "<p class=\"animated yipee\">" + antal + ") " + gissning + "Yippee! Du har vunnit äran!</p>";
+            elementSvar.insertAdjacentHTML("beforeend", svar);
+        }
+
+        /* Om gissning > slumptal, skriv ut "För högt" */
+        if (gissning > slumptal) {
+            svar = "<p class=\"hogt\" > " + antal + ")" + gissning + " för högt! < /p>";
+        elementSvar.insertAdjacentHTML("beforeend", svar);
     }
 
     /* Om gissning < slumptal, skriv ut "För lågt" */
     if (gissning < slumptal) {
-        svar = '<p class="lagt">' + antal + ') ' + gissning + ' för lågt!</p>';
-        elementSvar.insertAdjacentHTML('beforeend', svar);
+        svar = "<p class=\"lagt\">" + antal + ") " + gissning + " för lågt!</p>";
+        elementSvar.insertAdjacentHTML("beforeend", svar);
     }
 
     /* Om gissning > 100, skriv ut "Är du dum!" */
     if (gissning > 100) {
-        svar = '<p class="dum">' + antal + ') ' + gissning + ' är du dum!</p>';
-        elementSvar.insertAdjacentHTML('beforeend', svar);
+        svar = "<p class=\"dum\">" + antal + ") " + gissning + " är du dum!</p>";
+        elementSvar.insertAdjacentHTML("beforeend", svar);
     }
+}
 }

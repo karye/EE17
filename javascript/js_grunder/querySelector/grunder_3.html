@@ -7,52 +7,64 @@
 </head>
 <body>
     <h1>Grunder i Javascript</h1>
-    <p>Hemlig text</p>
+    <p>Ändra i HTML-element.</p>
+
     <p id="adress">Hemlig adress</p>
     <p id="mobil">Hemlig mobil</p>
 
     <button onclick="visaText()">Klicka mig!</button>
     <button onclick="visaAdress()">Visa adress</button>
     <button onclick="visaMobil()">Visa mobil</button>
+
     <p onclick="visaEasterEgg()">Visa easter egg</p>
 
     <script>
         function visaText() {
             /* Ansluta till p-elementet som jag vill ändra på */
-            const element = document.querySelector('p');
+            const elementP = document.querySelector("p");
+
             /* Skriv texten inuti p-elementet */
-            element.textContent = 'Hej på dig!';
+            element.textContent = "Hej på dig!";
         }
+
         function visaAdress() {
             /* Ansluta till p-elementet som jag vill ändra på */
-            const eleAdress = document.querySelector('#adress');
+            const eAdress = document.querySelector("#adress");
+
             /* Skriv texten inuti p-elementet */
-            eleAdress.textContent = 'Follingbogatan 26, 16860 Bromma';
+            eAdress.textContent = "Follingbogatan 26, 16860 Bromma";
         }
+
         function visaMobil() {
             /* Ansluta till p-elementet som jag vill ändra på */
-            const eleMobil = document.querySelector('#mobil');
+            const eMobil = document.querySelector("#mobil");
+
             /* Skriv texten inuti p-elementet */
-            eleMobil.textContent = '070675765765';
+            eMobil.textContent = "070675765765";
         }
+
         function visaEasterEgg() {
             /* Ansluta till p-elementet som jag vill ändra på */
-            const eleRubrik = document.querySelector('h1');
+            const eRubrik = document.querySelector("h1");
+
             /* Skriv texten inuti h1-elementet */
-            eleRubrik.textContent = 'Lolcatz!!!';
+            eRubrik.textContent = "Lolcatz!!!";
+
             /* Ändra stilen på h1-elemenbet */
-            eleRubrik.style.color = 'red';
+            eRubrik.style.color = "red";
 
             /* Anslut till body-elementet */
-            const eleBody = document.querySelector('body');
+            const eleBody = document.querySelector("body");
+
             /* Ändra bakgrunden till svart */
-            eleBody.style.backgroundColor = '#000';
+            eBody.style.backgroundColor = "#000";
+
             /* Lägg till bakgrundsbild */
-            eleBody.style.backgroundImage = 'url("./bilder/nukem.jpg")';
-            eleBody.textContent = '';
+            eBody.style.backgroundImage = "url(\"./bilder/nukem.jpg\")";
+            eBody.textContent = "";
 
             /* Infoga en bild i sidan */
-            eleRubrik.insertAdjacentHTML('afterend', '<img src="./bilder/giphy.webp">');
+            eRubrik.insertAdjacentHTML("afterend", "<img src=\"./bilder/giphy.webp\">");
         }
     </script>
 </body>

@@ -7,16 +7,16 @@ function start() {
     var summaStora = 0;
 
     /* Elementen vi jobbar med */
-    const elementVara = document.querySelector('#vara');
-    const elementPris = document.querySelector('#pris');
-    const elementKnapp = document.querySelector('button');
-    const elementSmaVara = document.querySelector('.smaVara');
-    const elementStoraVara = document.querySelector('.storaVara');
-    const elementSmaTot = document.querySelector('.smaTot');
-    const elementStoraTot = document.querySelector('.storaTot');
+    const elementVara = document.querySelector("#vara");
+    const elementPris = document.querySelector("#pris");
+    const elementKnapp = document.querySelector("button");
+    const elementSmaVara = document.querySelector(".smaVara");
+    const elementStoraVara = document.querySelector(".storaVara");
+    const elementSmaTot = document.querySelector(".smaTot");
+    const elementStoraTot = document.querySelector(".storaTot");
 
     /* Lyssna av knappen */
-    elementKnapp.addEventListener('click', mataIn);
+    elementKnapp.addEventListener("click", mataIn);
 
     function mataIn() {
         /* Läs av innehållet i input-rutorna */
@@ -29,11 +29,11 @@ function start() {
 
         /* Om priset mindre än 100 skriv in i vänstra listan, annars högra listan */
         if (pris < 100) {
-            elementSmaVara.innerHTML += vara + ' ' + pris + ' kr<br>';
+            elementSmaVara.innerHTML += vara + " " + pris + " kr<br>";
             summaSma += pris;
             elementSmaTot.textContent = summaSma;
         } else {
-            elementStoraVara.innerHTML += vara + ' ' + pris + ' kr<br>';
+            elementStoraVara.innerHTML += vara + " " + pris + " kr<br>";
             summaStora += pris;
             elementStoraTot.textContent = summaStora;
         }

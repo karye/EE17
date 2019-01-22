@@ -15,23 +15,23 @@ function start() {
     var mossaAntal = 0;
 
     /* Element vi behöver komma åt */
-    const eSkorPris = document.querySelector('#skorPris');
-    const eSkorAntal = document.querySelector('#skorAntal');
+    const eSkorPris = document.querySelector("#skorPris");
+    const eSkorAntal = document.querySelector("#skorAntal");
 
-    const eByxaPris = document.querySelector('#byxaPris');
-    const eByxaAntal = document.querySelector('#byxaAntal');
+    const eByxaPris = document.querySelector("#byxaPris");
+    const eByxaAntal = document.querySelector("#byxaAntal");
 
-    const eMossaPris = document.querySelector('#mossaPris');
-    const eMossaAntal = document.querySelector('#mossaAntal');
+    const eMossaPris = document.querySelector("#mossaPris");
+    const eMossaAntal = document.querySelector("#mossaAntal");
     
-    const eFrakt = document.querySelector('#frakt');
-    const eTotal = document.querySelector('#total');
+    const eFrakt = document.querySelector("#frakt");
+    const eTotal = document.querySelector("#total");
 
-    const eSkorPlus = document.querySelector('#skorPlus');
-    const eByxaPlus = document.querySelector('#byxaPlus');
-    const eMossaPlus = document.querySelector('#mossaPlus');
+    const eSkorPlus = document.querySelector("#skorPlus");
+    const eByxaPlus = document.querySelector("#byxaPlus");
+    const eMossaPlus = document.querySelector("#mossaPlus");
     
-    const eLevForetag = document.querySelectorAll('input[name="frakt"]');
+    const eLevForetag = document.querySelectorAll("input[name=\"frakt\"]");
 
     /* Läs av priset på varorna och skriv ut dom i konsolen */
     console.log(eSkorPris.value);
@@ -39,7 +39,7 @@ function start() {
     console.log(eMossaPris.value);
     
     /* När man klickar på plus fylls rutan "total" med varans pris */
-    eSkorPlus.addEventListener('click', laggTillSkor);
+    eSkorPlus.addEventListener("click", laggTillSkor);
     function laggTillSkor() {
         skorAntal += 1;
         eSkorAntal.value = skorAntal;
@@ -58,7 +58,7 @@ function start() {
         /* Räkna ut totalen */
         eTotal.value = eSkorPris.value * skorAntal + eByxaPris.value * byxaAntal + eMossaPris.value * mossaAntal + Number(eFrakt.value);
     }
-    eByxaPlus.addEventListener('click', laggTillByxa);
+    eByxaPlus.addEventListener("click", laggTillByxa);
     function laggTillByxa() {
         byxaAntal += 1;
         eByxaAntal.value = byxaAntal;
@@ -77,7 +77,7 @@ function start() {
         /* Räkna ut totalen */
         eTotal.value = eSkorPris.value * skorAntal + eByxaPris.value * byxaAntal + eMossaPris.value * mossaAntal + Number(eFrakt.value);
     }
-    eMossaPlus.addEventListener('click', laggTillMossa);
+    eMossaPlus.addEventListener("click", laggTillMossa);
     function laggTillMossa() {
         mossaAntal += 1;
         eMossaAntal.value = mossaAntal;

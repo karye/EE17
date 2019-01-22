@@ -7,14 +7,17 @@
 </head>
 <body>
     <h1>Grunder i Javascript</h1>
-    <p>Nu skall vi testa lite Javascript</p>
+    <p>Variabler i Javascript</p>
+
     <!-- Här skriver jag min kod -->
     <script>
-        /* alert('Hej Karim!'); */
-        let alder = prompt('Hur gammal är du?');
-        console.log(alder);
-        console.log('Idag är det grått ute.');
-        console.log('Hej Karim, din ålder är ' + alder);
+        var datum = new Date();
+        console.log(datum);
+
+        alert("Hej Karim, dagens datum är " + datum.getDate());
+        
+        var manad = datum.getMonth();
+        alert("Månaden är " + manad);
     </script>
 </body>
 </html>

@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Leka med animationer</title>
+    <title>Lek med animationer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 </head>
 <body>
-    <h1 class="animated">Leka med animationer</h1>
+    <h1 class="animated">Lek med animationer</h1>
+
     <button onclick="fadeOut()">Fade out!</button>
     <button onclick="fadeIn()">Fade in!</button>
 
@@ -27,40 +28,40 @@
     <button onclick="visaText()">Klicka på egen risk!</button>
 
     <script>
-        const elementText1 = document.querySelector('.text1');
-        const elementText2 = document.querySelector('.text2');
-        const elementText3 = document.querySelector('.text3');
+        const elementText1 = document.querySelector(".text1");
+        const elementText2 = document.querySelector(".text2");
+        const elementText3 = document.querySelector(".text3");
         
-        elementText1.setAttribute('hidden', 'true');
-        elementText2.setAttribute('hidden', 'true');
-        elementText3.setAttribute('hidden', 'true');
+        elementText1.setAttribute("hidden", "true");
+        elementText2.setAttribute("hidden", "true");
+        elementText3.setAttribute("hidden", "true");
 
         function visaText() {
-            const elementText1 = document.querySelector('.text1');
-            const elementText2 = document.querySelector('.text2');
-            const elementText3 = document.querySelector('.text3');
+            const elementText1 = document.querySelector(".text1");
+            const elementText2 = document.querySelector(".text2");
+            const elementText3 = document.querySelector(".text3");
 
-            elementText1.removeAttribute('hidden');
-            elementText2.removeAttribute('hidden');
-            elementText3.removeAttribute('hidden');
+            elementText1.removeAttribute("hidden");
+            elementText2.removeAttribute("hidden");
+            elementText3.removeAttribute("hidden");
 
-            elementText1.classList.add('fadeIn');
-            elementText2.classList.add('zoomIn');
-            elementText3.classList.add('slideIn');
+            elementText1.classList.add("fadeIn");
+            elementText2.classList.add("zoomIn");
+            elementText3.classList.add("slideIn");
         }
 
         function fadeOut() {
-            let element = document.querySelector('h1');
-/*             element.classList.remove('fadeIn');
-            element.classList.add('fadeOut'); */
-            element.classList.toggle('fadeOut');
+            var element = document.querySelector("h1");
+/*             element.classList.remove("fadeIn");
+            element.classList.add("fadeOut"); */
+            element.classList.toggle("fadeOut");
         }
 
         function fadeIn() {
-            let element = document.querySelector('h1');
-/*             element.classList.remove('fadeOut');
-            element.classList.add('fadeIn'); */
-            element.classList.toggle('fadeIn');
+            let element = document.querySelector("h1");
+/*             element.classList.remove("fadeOut");
+            element.classList.add("fadeIn"); */
+            element.classList.toggle("fadeIn");
         }
     </script>
 </body>

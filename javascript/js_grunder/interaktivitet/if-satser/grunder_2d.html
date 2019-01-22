@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grunder i Javascript</title>
+</head>
+<body>
+    <h1>Grunder i Javascript</h1>
+    <p>Inbyggda funktioner.</p>
+
+    <button onclick="frageAlder()">Fråga ålder</button>
+    <button onclick="frageAdress()">Fråga adress</button>
+    <button onclick="hamtaGeo()">Geolokalisering</button>
+
+    <!-- Här skriver jag min kod -->
+    <script>
+        function frageAlder() {
+            var alder = prompt("Hur gammal är du?");
+            console.log("Hej Karim, din ålder är " + alder);
+
+            if (alder < 20) {
+                alert("Tråkigt! Be en kompis köpa ut!");
+            } else {
+                alert("Yipee! Köp ut en öl åt mig oxå!");
+            }
+        }
+
+        function frageAdress() {
+            var adress = prompt("Vart bor du?");
+            console.log("Hej Karim, du bor på " + adress);
+        }
+
+        function hamtaGeo() {
+            navigator.geolocation.getCurrentPosition(svar, fel);
+
+            function svar(position) {
+                alert("Din position är latitude=" + position.coords.latitude + " och longitude=" + position.coords.longitude);
+            }
+            function fel(meddelande) {
+                alert("Något blev fel: " + meddelande);
+            }
+        }
+    </script>
+</body>
+</html>
