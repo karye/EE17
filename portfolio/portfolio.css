@@ -61,7 +61,7 @@ main {
 
 }
 main .innehall {
-    background:#ffffffbb;
+    background-color:rgba(255, 255, 255, 0.733);
     border-radius: 5px;
     padding: 20px;
     grid-area: innehall;
@@ -94,7 +94,7 @@ main aside {
     grid-area: sidebar;
 }
 main aside section {
-    background: #ffffffbb;
+    background-color: rgba(255, 255, 255, 0.733);
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
