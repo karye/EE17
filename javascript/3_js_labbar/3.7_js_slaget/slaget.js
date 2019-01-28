@@ -25,8 +25,8 @@ function start() {
     eButton.addEventListener("click", runda);
     function runda() {
         /* Läs in namnen på spelarna */
-        var spelare1 = eInput1.value;
-        var spelare2 = eInput2.value;
+        var spelare1 = Number(eInput1.value);
+        var spelare2 = Number(eInput2.value);
         console.log("spelare1 =" + spelare1);
         console.log("spelare2 =" + spelare2);
 

@@ -21,7 +21,7 @@ function start() {
         antal++;
 
         /* Läsa av gissningen i första input-rutan*/
-        var gissning = elementGissning.value;
+        var gissning = Number(elementGissning.value);
         console.log("Gissningen: " + gissning);
 
         /* Om gissning = slumptal, då har man vunnit */
