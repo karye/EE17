@@ -32,17 +32,11 @@ header h1 {
     font-size: 60px;
     margin: 10px 0;
 }
-header h2 {
-
-}
 header nav {
     background: linear-gradient(to right, #595959 0%,#e0cccc 100%);
     border-radius: 5px;
     padding: 10px;
     margin: 20px 0;
-}
-header ul {
-
 }
 header li {
     display: inline;
@@ -57,32 +51,14 @@ header a:hover {
 }
 
 /* Sidans innehåll */
-main {
-
-}
 main .innehall {
     background-color:rgba(255, 255, 255, 0.733);
     border-radius: 5px;
     padding: 20px;
     grid-area: innehall;
 }
-main article {
-
-}
-main h3 {
-
-}
-main figure {
-
-}
 main img {
     width: 100%;
-}
-main figcaption {
-
-}
-main p {
-
 }
 main a {
     text-decoration: none;
@@ -99,12 +75,6 @@ main aside section {
     padding: 20px;
     margin-bottom: 20px;
 }
-main aside h4 {
-
-}
-main aside ul {
-
-}
 main aside li {
     list-style: none;
 }
@@ -115,8 +85,7 @@ main aside a {
 
 /* Sidfoten */
 footer {
-}
-footer p {
+    padding: 20px 0;
 }
 
 /* Responsiv layout */
@@ -133,6 +102,7 @@ footer p {
 @media (min-width: 960px) {
     .kontainer {
         width: 960px;
+        padding: 0;
         margin: auto;
         font-family: 'PT Sans', sans-serif;
     }
