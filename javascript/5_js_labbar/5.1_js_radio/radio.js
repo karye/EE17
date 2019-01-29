@@ -7,7 +7,6 @@ function start() {
     eKnapp.addEventListener('click', valtKon);
 
     function valtKon() {
-
         if (eKon[0].checked) {
             console.log(eKon[0].value);
         }

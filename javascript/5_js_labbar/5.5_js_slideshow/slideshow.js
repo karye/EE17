@@ -9,16 +9,16 @@ function start() {
 
     /* Lista på alla bilder */
     var bildLista = [
-        './foton/chris-lawton-475897-unsplash.jpg',
-        './foton/colin-watts-1138048-unsplash.jpg',
-        './foton/ezra-comeau-jeffrey-336626-unsplash.jpg',
-        './foton/ghost-presenter-1076897-unsplash.jpg',
-        './foton/jack-millard-1138486-unsplash.jpg',
-        './foton/jeremy-bishop-1138388-unsplash.jpg',
-        './foton/kaleb-dortono-87610-unsplash.jpg',
-        './foton/oscar-helgstrand-1138481-unsplash.jpg',
-        './foton/philipp-raifer-1136704-unsplash.jpg',
-        './foton/stephen-kraakmo-1138352-unsplash.jpg'
+        '../../bilder/chris-lawton-475897-unsplash.jpg',
+        '../../bilder/colin-watts-1138048-unsplash.jpg',
+        '../../bilder/ezra-comeau-jeffrey-336626-unsplash.jpg',
+        '../../bilder/ghost-presenter-1076897-unsplash.jpg',
+        '../../bilder/jack-millard-1138486-unsplash.jpg',
+        '../../bilder/jeremy-bishop-1138388-unsplash.jpg',
+        '../../bilder/kaleb-dortono-87610-unsplash.jpg',
+        '../../bilder/oscar-helgstrand-1138481-unsplash.jpg',
+        '../../bilder/philipp-raifer-1136704-unsplash.jpg',
+        '../../bilder/stephen-kraakmo-1138352-unsplash.jpg'
     ];
 
     /* Position på bilden man tittar på */
