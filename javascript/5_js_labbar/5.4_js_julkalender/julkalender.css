@@ -13,13 +13,13 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 body {
-    background: #000;
+    background:url("../../bilder/photo-1480422080719-4d25a4c7e22c.jpg") #000;
 }
 .kontainer {
     width: 800px;
     margin: 30px auto;
     font-family: 'Parisienne', cursive;
-    background: crimson;
+    background: rgba(220, 20, 60, 0.904);
     color: #FFF;
     text-align: center;
     border-radius: 10px;
