@@ -15,13 +15,6 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 body {
     background: #EEE;
 }
-.container {
-    font-family: 'Roboto', sans-serif;
-    width: 800px;
-    margin: 0 auto;
-    background: #FFF;
-    box-shadow: 0 0 30px #8f8f8f;
-}
 html, body {
     width: 100%;
     height: 100%;
@@ -31,6 +24,11 @@ html, body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 100%;
+    font-family: 'Roboto', sans-serif;
+    width: 800px;
+    margin: 0 auto;
+    background: #FFF;
+    box-shadow: 0 0 30px #8f8f8f;
 }
 header {
     padding: 30px;

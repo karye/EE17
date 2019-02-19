@@ -1,51 +1,69 @@
-window.onload = start();
+/* Kör när sidan laddat klart */
+window.onload = start;
 
 function start() {
-    /* Våra element i HTML som vi läser/skriver */
-    const elementGissning = document.querySelector("#gissning");
-    const elementKnapp = document.querySelector("button");
-    const elementSvar = document.querySelector("#svar");
 
-    /* Skapa ett slumptal mellan 1 och 100 */
-    var slumptal = Math.ceil(Math.random() * 100);
-    console.log("Nytt slumptal: " + slumptal);
+    /* Elementen vi jobbar med */
+    const elementTal = document.querySelector('#tal');
+    const elementGissa = document.querySelector('#gissa');
+    const elementResultat = document.querySelector('#resultat');
+    const elementGissningar = document.querySelector('#gissningar');
+    const elementHogsta = document.querySelector('#hogsta');
+    const elementValjTal = document.querySelector('#valjTal');
+    const elementStartaOm = document.querySelector('#startaOm');
 
-    /* Antal försök */
-    var antal = 0;
+    /* Lyssna på knappen */
+    elementGissa.addEventListener("click", gissa);
+    elementValjTal.addEventListener("click", valjTal);
+    elementStartaOm.addEventListener("click", startaOm);
 
-    /* Reagera på när man trycker på knappen */
-    elementKnapp.addEventListener("click", gissa);
+    function startaOm() {
+        elementTal.value = "";
+        elementResultat.value = "";
+        elementHogsta.value = "";
+        elementGissningar.value = "";
+        elementHogsta.disabled = false;
+        elementTal.disabled = false;
+    }
+    var slumptal;
+
+    /* Skapa ett slumptal */
+    function valjTal() {
+        var hogsta = Number(elementHogsta.value);
+        slumptal = Math.ceil(Math.random() * hogsta);
+        console.log(slumptal);
+        elementHogsta.disabled = true;
+    }
+
+    var gissningar = 5;
+    elementGissningar.value = gissningar;
+
     function gissa() {
+        /* Läs av rutan */
+        var tal = Number(elementTal.value);
+        console.log(tal);
 
-        /* Räkna upp */
-        antal++;
-
-        /* Läsa av gissningen i första input-rutan*/
-        var gissning = Number(elementGissning.value);
-        console.log("Gissningen: " + gissning);
-
-        /* Om gissning = slumptal, då har man vunnit */
-        if (gissning == slumptal) {
-            svar = "<p class=\"animated yipee\">" + antal + ") " + gissning + "Yippee! Du har vunnit äran!</p>";
-            elementSvar.insertAdjacentHTML("beforeend", svar);
+        if (tal == 0) {
+            elementResultat.value = "Skriv en siffra!";
+        } else {
+            if (tal > slumptal) {
+                elementResultat.value = "Talet är för högt!";
+                gissningar--;
+                elementGissningar.value = gissningar;
+            }
+            if (tal < slumptal) {
+                elementResultat.value = "Talet är för lågt!";
+                gissningar--;
+                elementGissningar.value = gissningar;
+            }
+            if (tal == slumptal) {
+                elementResultat.value = "Rätt gissat!";
+            }
+            if (gissningar == 0) {
+                elementTal.disabled = true;
+                elementGissa.disabled = true;
+                elementResultat.value = "Du förlorade!";
+            }
         }
-
-        /* Om gissning > slumptal, skriv ut "För högt" */
-        if (gissning > slumptal) {
-            svar = "<p class=\"hogt\" > " + antal + ")" + gissning + " för högt! < /p>";
-        elementSvar.insertAdjacentHTML("beforeend", svar);
     }
-
-    /* Om gissning < slumptal, skriv ut "För lågt" */
-    if (gissning < slumptal) {
-        svar = "<p class=\"lagt\">" + antal + ") " + gissning + " för lågt!</p>";
-        elementSvar.insertAdjacentHTML("beforeend", svar);
-    }
-
-    /* Om gissning > 100, skriv ut "Är du dum!" */
-    if (gissning > 100) {
-        svar = "<p class=\"dum\">" + antal + ") " + gissning + " är du dum!</p>";
-        elementSvar.insertAdjacentHTML("beforeend", svar);
-    }
-}
 }
