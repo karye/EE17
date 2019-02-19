@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1 class="animated">Leka med animationer</h1>
-    <button onclick="fade()">Fade!</button>
+    <button class="fade" onclick="fade()">Fade!</button>
 
     <h2>Volvo</h2>
     <p class="animated">Jag hade köpt en Chevrolet från -63 och rev iväg på stan och skulle se<br>
@@ -23,32 +23,8 @@
         På nästa raka varvade jag ner, och tänkte inte på nån Volvo mer<br>
         Men när jag hunnit nästan in till stan<br>
         Så kom det nån och blåste om och det gick fort som fan</p>
-    <button onclick="visaText()">Klicka på egen risk!</button>
+    <button class="visa">Klicka på egen risk!</button>
 
-    <script>
-        const elementRubrik = document.querySelector("h1");
-        const elementText = document.querySelectorAll("p");
-
-        elementText.forEach(function(item) {
-            item.setAttribute("hidden", "true")
-        });
-
-        function visaText() {
-            elementText.forEach(function(item) {
-                item.removeAttribute("hidden");
-                item.classList.add("fadeIn");
-            });
-        }
-
-        function fade() {
-            if (elementRubrik.classList.contains("fadeOut")) {
-                elementRubrik.classList.remove("fadeOut");
-                elementRubrik.classList.add("fadeIn");
-            } else {
-                elementRubrik.classList.remove("fadeIn");
-                elementRubrik.classList.add("fadeOut");
-            }
-        }
-    </script>
+    <script src="animate.js"></script>
 </body>
 </html>
