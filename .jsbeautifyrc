@@ -9,8 +9,7 @@
         ],
         "content_unformatted": [
             "pre",
-            "textarea",
-            "html"
+            "textarea"
         ]
     }
 }

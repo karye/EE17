@@ -11,6 +11,7 @@ function start() {
 
     /* Lyssna på knapp1 */
     eKnapp1.addEventListener("click", addera);
+
     function addera() {
         /* Läsa av innehållet på rutorna */
         var tal1 = Number(eRuta1.value);
@@ -25,6 +26,7 @@ function start() {
 
     /* Lyssna på knapp1 */
     eKnapp2.addEventListener("click", subtrahera);
+
     function subtrahera() {
         /* Läsa av innehållet på rutorna */
         var tal1 = Number(eRuta1.value);
