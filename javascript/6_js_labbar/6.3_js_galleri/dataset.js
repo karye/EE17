@@ -9,7 +9,7 @@ function start() {
     elementKnapp2.addEventListener('click', andraText)
 
     function andraText() {
-        console.log(this.dataset.sko);
+        console.log("Tryckte på knapp: " +this.dataset.sko);
         elementImg.src = this.dataset.sko;
     }
 }
