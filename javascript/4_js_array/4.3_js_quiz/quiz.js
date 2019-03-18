@@ -33,6 +33,11 @@ function start() {
         "Flygplan",
         "Semester"
     ];
+    
+    var ordLista = [
+        ["Fun", "Kul"]
+    ];
+    console.log(ordLista[0]);
 
     /* För att komma ihåg ordet och översättningen */
     var ordetEn = "";
@@ -48,7 +53,7 @@ function start() {
     /* Kör funktionen och skapa slumpade ord */
     slumpaOrd();
     console.log(ordetEn + " " +  ordetSv);
-    eOrdet.textContent = ordetEn;
+    eOrdet.value = ordetEn;
 
     eKnappRatta.addEventListener("click", rattaSvaret);
     function rattaSvaret() {
