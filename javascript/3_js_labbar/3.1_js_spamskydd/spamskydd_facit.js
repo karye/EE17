@@ -45,12 +45,12 @@ function start() {
             console.log("Rätt!");
 
             /* Skriv ut svar: "Rätt svar, du är en människa!" */
-            elementSvar.textContent = "Rätt svar, du är en människa!";
+            elementSvar.value = "Rätt svar, du är en människa!";
         } else {
             console.log("Fel!");
 
             /* Skriv ut svar: "Fel svar, du en robot eller en människa som räknar fel!" */
-            elementSvar.textContent = "Fel svar, du en robot eller en människa som räknar fel!";
+            elementSvar.value = "Fel svar, du en robot eller en människa som räknar fel!";
         }
     }
 }
