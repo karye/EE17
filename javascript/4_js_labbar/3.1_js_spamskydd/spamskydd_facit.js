@@ -9,10 +9,11 @@ window.onload = start;
 
 function start() {
 
-    /* Ta tag i elementet som vi vill jobba med */
-    const elementFragan = document.querySelector('.fragan');
+    /* Ta tag i elementen som vi vill jobba med */
+    const eFragan = document.querySelector('.fragan');
+    const eResultat = document.querySelector('.resultat');
     /* Ta tag i knappen */
-    const elementKnappen = document.querySelector(".knappen");
+    const eKnappen = document.querySelector(".knappen");
 
     /* Skapar globala variabler */
     var tal1, tal2;
@@ -23,11 +24,11 @@ function start() {
 
     /* Skriv ut frågan */
     /* Tex "Vad är 2+3?"; */
-    elementFragan.textContent = "Vad är " + tal1 + " + " + tal2 + "?";
+    eFragan.textContent = "Vad är " + tal1 + " + " + tal2 + "?";
 
     /* Aktivera knappen, dvs lyssna på knappen */
     /* Lyssna på knappen */
-    elementKnappen.addEventListener("click", spamSkydd);
+    eKnappen.addEventListener("click", spamSkydd);
 
     function spamSkydd() {
         /* Testa att det funka att klicka på knappen */
@@ -35,9 +36,9 @@ function start() {
 
         /* Läs in det som användaren skriver i textrutan summa */
         /* 1. Ta tag i textrutan */
-        const elementSvar = document.querySelector(".svar");
+        const eSvar = document.querySelector(".svar");
         /* 2. Läs av innehållet */
-        var svar = Number(elementSvar.value);
+        var svar = Number(eSvar.value);
         console.log(svar);
 
         /* Jämför summa med svaret */
@@ -45,12 +46,12 @@ function start() {
             console.log("Rätt!");
 
             /* Skriv ut svar: "Rätt svar, du är en människa!" */
-            elementSvar.value = "Rätt svar, du är en människa!";
+            eResultat.value = "Rätt svar, du är en människa!";
         } else {
             console.log("Fel!");
 
             /* Skriv ut svar: "Fel svar, du en robot eller en människa som räknar fel!" */
-            elementSvar.value = "Fel svar, du en robot eller en människa som räknar fel!";
+            eResultat.value = "Fel svar, du en robot eller en människa som räknar fel!";
         }
     }
 }

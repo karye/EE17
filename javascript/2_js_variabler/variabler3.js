@@ -1,27 +1,20 @@
+/* 
+Svaret = "Hej ..., du är född ..."
+*/
+
 window.onload = start;
 
 function start() {
-    /* Element vi jobbar med */
+    /* Lista på alla element vi ska jobba med */
+    const eRuta1 = document.querySelector("#ruta1");
+    const eRuta2 = document.querySelector("#ruta2");
     const eKnapp1 = document.querySelector("#knapp1");
-    const eKnapp2 = document.querySelector("#knapp2");
-    const eTalet = document.querySelector("#talet");
+    const eRuta3 = document.querySelector("#ruta3");
 
-    eKnapp1.addEventListener("click", raknaNed);
-    eKnapp2.addEventListener("click", raknaUpp);
+    /* Lyssna på knapp1 */
+    eKnapp1.addEventListener("click", mixa);
 
-    function raknaNed() {
-        /* Läs av innehållet i rutan */
-        var talet = Number(eTalet.value);
+    function mixa() {
 
-        /* Skriv ut resultatet */
-        eTalet.value = talet - 1;
-    }
-
-    function raknaUpp() {
-        /* Läs av innehållet i rutan */
-        var talet = Number(eTalet.value);
-
-        /* Skriv ut resultatet */
-        eTalet.value = talet + 1;
     }
 }
