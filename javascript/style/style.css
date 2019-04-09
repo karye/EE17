@@ -21,14 +21,20 @@ body {
     background: #fff;
     border-radius: 5px;
     font-family: 'Open Sans', sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 1em;
     border: 1px solid #ddd;
     box-shadow: 0 0 12px #f0e9d1;
 }
-h1 {
-    font-size: 1.5em;
+.kol2 {
+    margin: 1em 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1em;
+}
+.kol3 {
+    margin: 1em 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 1em;
 }
 label {
     text-align: right;
@@ -44,6 +50,7 @@ input, textarea {
 }
 textarea {
     height: 5em;
+    width: 100%;
 }
 button {
     padding: 0.7em;
@@ -52,6 +59,9 @@ button {
     font-weight: bold;
     color: #FFF;
     background-color: #55a5d2;
+}
+h1, h2, h3 {
+    margin: 0.5em 0;
 }
 p {
     background: #FFF;
@@ -75,8 +85,9 @@ p {
     margin-top: 10px;
 }
 .output {
-    margin: 20px;
-    padding: 20px;
-    background: #c9c9c9;
-    border-radius: 10px;
+    background: #FFF;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
