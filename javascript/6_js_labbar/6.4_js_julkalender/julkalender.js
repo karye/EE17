@@ -5,7 +5,7 @@ function start() {
     /* Element vi jobbar med */
     const elementGrid = document.querySelector('.grid');
 
-    /* Lyssna på klick */
+    /* Lyssna på click */
     elementGrid.addEventListener('click', lucka);
 
     /* Vinsten någonstans mellan 1 och 24 */

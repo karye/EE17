@@ -10,15 +10,17 @@ function start() {
     function ärMyndig() {
         var födelsedag = eRuta.value;
 
-        ålder = raknaÅlder(födelsedag);
+        ålder = räknaUtÅlder(födelsedag);
         eTextRuta.value = ålder;
-/* TODO */
+
         if (ålder < 18) {
-            alert("Be mamma om hjälp!");
+            eTextRuta.value = "Din ålder är " + ålder + ". Du är inte myndig.";
+        } else {
+            eTextRuta.value = "Din ålder är " + ålder + ". Du är myndig!";
         }
     }
 
-    function raknaÅlder(datum) {
+    function räknaUtÅlder(datum) {
         console.log(datum);
         
         var födelsedag = new Date(datum);
