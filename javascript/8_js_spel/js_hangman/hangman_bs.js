@@ -54,11 +54,11 @@ function start() {
     eTangent.addEventListener("click", testaBokstav);
 
     function testaBokstav(e) {
-        if (e.target.tagName = "li") {
+        if (e.target.tagName === 'LI' ) {
             var bokstav = e.target.dataset.bokstav;
             var hittad = false;
 
-            /* e.target.classList.add("disabled"); */
+            e.target.classList.add("disabled");
 
             for (let i = 0; i < stad.length; i++) {
                 console.log(stad[i], bokstav);
@@ -66,17 +66,21 @@ function start() {
                 if (stad[i] == bokstav || stad[i] == bokstav.toUpperCase()) {
                     svaret[i] = bokstav;
                     hittad = true;
+                    bokstaverKvar--;
                 }
             }
-            if (hittad) {
-                bokstaverKvar--;
-            } else {
+            if (!hittad) {
                 fel++;
                 ritaHangman(fel);
             }
             console.log(bokstav, bokstaverKvar, fel);
 
             eResultat.value = svaret;
+
+            if (bokstaverKvar == 0) {
+                ctx.font = '30px sans-serif';
+                ctx.fillText('Du vann!', 100, 50);
+            }
         }
     }
 
@@ -120,5 +124,4 @@ function start() {
             ctx.fillText('Du förlorade!', 100, 50);
         }
     }
-
 }

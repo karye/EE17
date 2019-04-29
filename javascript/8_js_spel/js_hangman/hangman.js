@@ -65,17 +65,21 @@ function start() {
             if (stad[i] == bokstav || stad[i] == bokstav.toUpperCase()) {
                 svaret[i] = bokstav;
                 hittad = true;
+                bokstaverKvar--;
             }
         }
-        if (hittad) {
-            bokstaverKvar--;
-        } else {
+        if (!hittad) {
             fel++;
             ritaHangman(fel);
         }
-        console.log(bokstaverKvar, fel);
+        console.log(bokstav, bokstaverKvar, fel);
 
         eResultat.value = svaret;
+
+        if (bokstaverKvar == 0) {
+            ctx.font = '30px sans-serif';
+            ctx.fillText('Du vann!', 100, 50);
+        }
     }
 
     /* https://medium.com/@zfrisch/understanding-start-and-end-angles-487dabe1d9ce */
