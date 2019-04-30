@@ -2,7 +2,7 @@ window.onload = start;
 
 function start() {
     /* Hur vi kontaktar webbtjänsten */
-    const url = "http://localhost:8080/EE16/json";
+    const url = "https://json.smutje.se";
     const canvas = document.querySelector("canvas");
     var ctx = canvas.getContext("2d");
     ctx.canvas.width = 400;
