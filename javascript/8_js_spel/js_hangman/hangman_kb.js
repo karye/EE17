@@ -1,3 +1,13 @@
+/* 
+1. Pick a random word.
+2. Take the player’s guess.
+3. Quit the game if the player wants to.
+4. Check that the player’s guess is a valid letter.
+5. Keep track of letters the player has guessed.
+6. Show the player their progress.
+7. Finish when the player has guessed the word.
+*/
+
 window.onload = start;
 
 function start() {
@@ -47,7 +57,10 @@ function start() {
         for (let i = 0; i < bokstaverKvar; i++) {
             svaret[i] = '_';
         }
-        eResultat.value = svaret;
+
+        for (let i = 0; i < stad.length; i++) {
+            eResultat.value += "_ ";
+        }
     }
 
     /* Spelaren testar en bokstav: rätt eller fel? Resultat visas */
@@ -58,7 +71,7 @@ function start() {
             var bokstav = e.target.dataset.bokstav;
             var hittad = false;
 
-            e.target.classList.add("disabled");
+            e.target.classList.add("animated", "zoomOut");
 
             for (let i = 0; i < stad.length; i++) {
                 console.log(stad[i], bokstav);
@@ -75,11 +88,18 @@ function start() {
             }
             console.log(bokstav, bokstaverKvar, fel);
 
-            eResultat.value = svaret;
+            eResultat.value = "";
+            for (let i = 0; i < stad.length; i++) {
+                if (svaret[i] == '') {
+                    eResultat.value += "_ ";
+                } else {
+                    eResultat.value += svaret[i] + ' ';
+                }
+            }
 
             if (bokstaverKvar == 0) {
                 ctx.font = '30px sans-serif';
-                ctx.fillText('Du vann!', 100, 50);
+                ctx.fillText('Du vann!', 140, 50);
             }
         }
     }
@@ -122,6 +142,11 @@ function start() {
             ctx.stroke();
             ctx.font = '30px sans-serif';
             ctx.fillText('Du förlorade!', 100, 50);
+
+            for (let i = 0; i < stad.length; i++) {
+                svaret[i] = stad[i];
+            }
+            eResultat.value = svaret;
         }
     }
 }

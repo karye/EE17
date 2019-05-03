@@ -1,6 +1,4 @@
 /* 
-https://nostarch.com/download/JS4K_ch7.pdf
-
 1. Pick a random word.
 2. Take the player’s guess.
 3. Quit the game if the player wants to.
@@ -21,76 +19,31 @@ function start() {
     ctx.canvas.height = 300;
 
     /* Variabler vi behöver */
-    var stader = [];
-    var stad = "";
-    var svaret = [];
-    var bokstaverKvar = 0;
     var fel = 0;
 
-    /* Element vi behöver läsa av eller skriva till */
-    const eKnapp = document.querySelector("button");
-    const eRuta = document.querySelector("#bokstav");
-    const eResultat = document.querySelector("#resultat");
-
-    /* Hämta hem lista på alla svenska städer */
-    function hamtaStader() {
-
-        /* Skicka ajax-anrop till webbtjänsten */
-        var ajax = new XMLHttpRequest();
-        ajax.addEventListener("loadend", hamtaJson);
-
-        function hamtaJson() {
-            stader = JSON.parse(this.responseText);
-            console.log(stader.length);
-            slumpa();
-        }
-
-        ajax.open("GET", url, true);
-        ajax.send();
-    }
-    hamtaStader();
-
     /* Välj en stad med slump */
-    function slumpa() {
-        const index = Math.ceil(Math.random() * 161);
-        stad = stader[index];
-        bokstaverKvar = stad.length;
-        console.log(stad);
+    const slumptal = Math.ceil(Math.random() * 10);
+    console.log(slumptal);
 
-        for (let i = 0; i < bokstaverKvar; i++) {
-            svaret[i] = '_';
-        }
-        eResultat.value = svaret;
-    }
+    /* Element vi behöver läsa av eller skriva till */
+    const eKnappar = document.querySelectorAll("button");
 
     /* Spelaren testar en bokstav: rätt eller fel? Resultat visas */
-    eKnapp.addEventListener("click", testaBokstav);
+    eKnappar.forEach(eKnappar => {
+        eKnappar.addEventListener("click", testaBokstav);
+    });
 
-    function testaBokstav() {
-        const bokstav = eRuta.value;
-        var hittad = false;
-        console.log(bokstav);
+    function testaBokstav(e) {
+        const tal = this.dataset.tal;
+        console.log(tal);
 
-        for (let i = 0; i < stad.length; i++) {
-            console.log(stad[i], bokstav);
-
-            if (stad[i] == bokstav || stad[i] == bokstav.toUpperCase()) {
-                svaret[i] = bokstav;
-                hittad = true;
-                bokstaverKvar--;
-            }
-        }
-        if (!hittad) {
-            fel++;
-            ritaHangman(fel);
-        }
-        console.log(bokstav, bokstaverKvar, fel);
-
-        eResultat.value = svaret;
-
-        if (bokstaverKvar == 0) {
+        if (tal == slumptal) {
             ctx.font = '30px sans-serif';
             ctx.fillText('Du vann!', 100, 50);
+        } else {
+            fel++;
+            ritaHangman(fel);
+            this.classList.add("animated", "zoomOut");
         }
     }
 
