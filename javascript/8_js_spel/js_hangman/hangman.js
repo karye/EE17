@@ -14,7 +14,7 @@ window.onload = start;
 
 function start() {
     /* Hur vi kontaktar webbtjänsten */
-    const url = "https://json.smutje.se";
+    const url = "https://json.smutje.se/capitals";
     const canvas = document.querySelector("canvas");
     var ctx = canvas.getContext("2d");
     ctx.canvas.width = 400;
