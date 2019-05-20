@@ -15,70 +15,70 @@ function start() {
         raknare++;
         console.log(raknare);
 
+        /* Jorden */
         if (raknare == 1) {
-            /* Jorden */
             ctx.arc(300, 800, 400, 0, 2 * Math.PI);
             ctx.stroke();
         }
 
+        /* Galgen 1:3 */
         if (raknare == 2) {
-            /* Galgen 1:3 */
             ctx.moveTo(200, 420);
             ctx.lineTo(200, 30);
             ctx.stroke();
         }
 
+        /* Galgen 2:3 */
         if (raknare == 3) {
-            /* Galgen 2:3 */
             ctx.moveTo(200, 30);
             ctx.lineTo(450, 30);
             ctx.stroke();
         }
 
+        /* Galgen 3:3 */
         if (raknare == 4) {
-            /* Galgen 3:3 */
             ctx.moveTo(400, 30);
             ctx.lineTo(400, 70);
             ctx.stroke();
         }
 
+        /* Huvudet */
         if (raknare == 5) {
-            /* Huvudet */
             ctx.beginPath();
             ctx.arc(400, 100, 30, 0, 2 * Math.PI);
             ctx.stroke();
         }
 
+        /* Kroppen */
         if (raknare == 6) {
-            /* Kroppen */
             ctx.moveTo(400, 130);
             ctx.lineTo(400, 250);
             ctx.stroke();
         }
 
+        /* Höger arm */
         if (raknare == 7) {
-            /* Höger arm */
             ctx.moveTo(400, 150);
             ctx.lineTo(450, 200);
             ctx.stroke();
         }
 
+        /* Vänster arm */
         if (raknare == 8) {
-            /* Vänster arm */
             ctx.moveTo(400, 150);
             ctx.lineTo(350, 200);
             ctx.stroke();
         }
 
+        /* Höger ben */
         if (raknare == 9) {
-            /* Höger ben */
             ctx.moveTo(400, 250);
             ctx.lineTo(450, 350);
             ctx.stroke();
         }
 
+        /* Vänster ben */
         if (raknare == 10) {
-            /* Vänster ben */
             ctx.moveTo(400, 250);
             ctx.lineTo(350, 350);
             ctx.stroke();
