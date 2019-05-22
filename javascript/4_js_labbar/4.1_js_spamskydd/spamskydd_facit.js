@@ -11,7 +11,7 @@ function start() {
 
     /* Ta tag i elementen som vi vill jobba med */
     const eFragan = document.querySelector('.fragan');
-    const eResultat = document.querySelector('.resultat');
+    const eOutput = document.querySelector('.output');
     /* Ta tag i knappen */
     const eKnappen = document.querySelector(".knappen");
 
@@ -46,12 +46,12 @@ function start() {
             console.log("Rätt!");
 
             /* Skriv ut svar: "Rätt svar, du är en människa!" */
-            eResultat.value = "Rätt svar, du är en människa!";
+            eOutput.value = "Rätt svar, du är en människa!";
         } else {
             console.log("Fel!");
 
             /* Skriv ut svar: "Fel svar, du en robot eller en människa som räknar fel!" */
-            eResultat.value = "Fel svar, du en robot eller en människa som räknar fel!";
+            eOutput.value = "Fel svar, du en robot eller en människa som räknar fel!";
         }
     }
 }

@@ -9,7 +9,7 @@ function start() {
     const eKnappNytt = document.querySelector("#nytt");
 
     /* En massa ord */
-    var ordLista = [
+    var ordlista = [
         ["Fun", "Kul"],
         ["Correct", "Korrekt"],
         ["Easy", "Lätt"],
@@ -28,13 +28,13 @@ function start() {
     /* Slumpa fram ett ord */
     function slumpaOrd() {
         var slumptal = Math.ceil(Math.random() * 10 - 1);
-        eOrdet.value = ordlistaEn[slumptal][0];
+        eOrdet.value = ordlista[slumptal][0];
     }
 
     eKnappRatta.addEventListener("click", rattaSvaret);
     function rattaSvaret() {
         var svaret = eSvaret.value;
-        if (svaret == ordlistaEn[slumptal][1]) {
+        if (svaret == ordlista[slumptal][1]) {
             eOutput.textContent = "Rätt svar";
         } else {
             eOutput.textContent = "Fel svar";

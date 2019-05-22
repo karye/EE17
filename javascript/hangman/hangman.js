@@ -3,6 +3,8 @@ window.onload = start;
 function start() {
     var canvas = document.querySelector("#myCanvas");
     var ctx = canvas.getContext("2d");
+    ctx.canvas.width = 700;
+    ctx.canvas.height = 500;
     var raknare = 0;
 
     /* Element vi jobbar med */
