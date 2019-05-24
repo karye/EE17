@@ -9,12 +9,12 @@ function start() {
     elementHoger.addEventListener('click', bytBild);
 
     var bilder = [
-        './bilder/chris-lawton-475897-unsplash.jpg',
-        './bilder/ezra-comeau-jeffrey-336626-unsplash.jpg',
-        './bilder/ghost-presenter-1076897-unsplash.jpg',
-        './bilder/nad-hemnani-41314-unsplash.jpg',
-        './bilder/philipp-raifer-1136704-unsplash.jpg',
-        './bilder/stephen-kraakmo-1138352-unsplash.jpg'
+        'chris-lawton-475897-unsplash.jpg',
+        'ezra-comeau-jeffrey-336626-unsplash.jpg',
+        'ghost-presenter-1076897-unsplash.jpg',
+        'nad-hemnani-41314-unsplash.jpg',
+        'philipp-raifer-1136704-unsplash.jpg',
+        'stephen-kraakmo-1138352-unsplash.jpg'
     ];
 
     var index = 0;
@@ -33,7 +33,9 @@ function start() {
             index = 0;
         }
 
-        elementBild.innerHTML = '<img class="animated" src=' + bilder[index] + '>';
+        elementBild.innerHTML = '<img class="animated" src=./../../bilder/' + bilder[index] + '>';
         elementBild.firstChild.classList.add('fadeIn');
     }
+
+    elementBild.innerHTML = '<img class="animated" src=./../../bilder/' + bilder[index] + '>';
 }

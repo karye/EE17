@@ -25,22 +25,22 @@ function start() {
 
     /* Vad ska hända när man klickat på knapp1? */
     function visaBild1() {
-        elementImg.src = '../bilder/michael-olsen-584366-unsplash.jpg';
+        elementImg.src = './../../bilder/michael-olsen-584366-unsplash.jpg';
         elementP.textContent = 'Photo by Michael Olsen';
     }
     /* Vad ska hända när man klickat på knapp2? */
     function visaBild2() {
-        elementImg.src = '../bilder/diogo-sousa-457381-unsplash.jpg';
+        elementImg.src = './../../bilder/diogo-sousa-457381-unsplash.jpg';
         elementP.textContent = 'Photo by Diogo Sousa';
     }
     /* Vad ska hända när man klickat på knapp3? */
     function visaBild3() {
-        elementImg.src = '../bilder/kees-streefkerk-352781-unsplash.jpg';
+        elementImg.src = './../../bilder/kees-streefkerk-352781-unsplash.jpg';
         elementP.textContent = 'Photo by Kees Streefkerk';
     }
     /* Vad ska hända när man klickat på knapp4? */
     function visaBild4() {
-        elementImg.src = '../bilder/jose-duarte-317893-unsplash.jpg';
+        elementImg.src = './../../bilder/jose-duarte-317893-unsplash.jpg';
         elementP.textContent = 'Photo by Jose Duarte';
     }
 }

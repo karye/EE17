@@ -25,13 +25,13 @@ function start() {
     /* Infoga en bild när du klickar på knapp 2 */
     elementIce.addEventListener("click", infogaBild);
     function infogaBild() {
-        elementOutput.innerHTML = "<img src=\"../ikoner/alien-1-64x64.png\" alt=\"Alien\">";
+        elementOutput.innerHTML = "<img src=\"./../../ikoner/alien-1-64x64.png\" alt=\"Alien\">";
     }
 
     /* Skjut in en till ikon för varje klick på knapp 3 */
     elementAttack.addEventListener("click", infogaBilder);
     function infogaBilder() {
-        elementOutput.innerHTML += "<img src=\"../ikoner/alien-3-64x64.png\" alt=\"Alien\">";
+        elementOutput.innerHTML += "<img src=\"./../../ikoner/alien-3-64x64.png\" alt=\"Alien\">";
     }
 
     /* Extra uppgift infoga slumpvis vald ikon */
@@ -47,6 +47,6 @@ function start() {
         
     function infogaSlumpBild() {
         var slump = Math.ceil(Math.random() * 7 - 1);
-        elementOutput.innerHTML += "<img src=\"../\"" + ikoner[slump] + "alt=\"Ikon\">";
+        elementOutput.innerHTML += "<img src=\"./../../\"" + ikoner[slump] + "alt=\"Ikon\">";
     }
 }

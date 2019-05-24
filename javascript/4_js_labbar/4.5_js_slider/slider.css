@@ -1,16 +1,3 @@
-.kontainer {
-    width: 600px;
-    padding: 30px;
-    margin: 20px auto;
-    background: rgb(162, 220, 238);
-    text-align: center;
-}
-
-.slidecontainer {
-    width: 100%;
-    /* Width of the outside container */
-}
-
 /* The slider itself */
 .slider {
     -webkit-appearance: none;
