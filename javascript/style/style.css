@@ -24,6 +24,9 @@ body {
     border: 1px solid #ddd;
     box-shadow: 0 0 12px #f0e9d1;
 }
+#myCanvas {
+    border: 1px solid;
+}
 .kol2 {
     margin: 1em 0;
     display: grid;
