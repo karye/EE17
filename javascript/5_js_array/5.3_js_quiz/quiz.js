@@ -21,19 +21,24 @@ function start() {
         ["Plane", "Flygplan"],
         ["Holiday", "Semester"]
     ];
+    var slumptal;
 
     /* För att komma ihåg ordet och översättningen */
     var slumptal = 0;
 
     /* Slumpa fram ett ord */
     function slumpaOrd() {
-        var slumptal = Math.ceil(Math.random() * 10 - 1);
+        slumptal = Math.ceil(Math.random() * 10 - 1);
         eOrdet.value = ordlista[slumptal][0];
+        console.log(slumptal, ordlista[slumptal][0]);
+        
     }
 
     eKnappRatta.addEventListener("click", rattaSvaret);
     function rattaSvaret() {
         var svaret = eSvaret.value;
+        console.log(ordlista[slumptal][1], svaret);
+        
         if (svaret == ordlista[slumptal][1]) {
             eOutput.textContent = "Rätt svar";
         } else {
@@ -43,7 +48,7 @@ function start() {
 
     eKnappNytt.addEventListener("click", nyFraga);
     function nyFraga() {
-        eOrdet.textContent = ordetEn;
+        eOrdet.textContent = "";
         eSvaret.value = "";
         eOutput.textContent = "";
         slumpaOrd();
