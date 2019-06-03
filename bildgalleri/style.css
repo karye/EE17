@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Courgette|Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script&display=swap');
 
 /* Enkel CSS-reset */
 html {
@@ -21,31 +21,39 @@ body {
 div.kontainer {
     width: 800px;
     padding: 40px;
-    color: rgb(182, 132, 132);
-    background: linear-gradient(to bottom, #b3c9a157 0%,#1f3b08 100%);
+    color: #FFF;
+    background: #c36aba99;
     margin: 20px auto;
     border-radius: 5px;
+    font-family: 'Dancing Script', cursive;
+    
 }
 h1 {
-    font-family: 'Courgette', cursive;
+    font-family: 'Amatic SC', cursive;
     font-size: 80px;
     text-align: center;
     text-shadow: 3px 3px 5px #000;
 }
+h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 28px;
+    margin: 10px 50px;
+    text-shadow: 1px 1px 1px #5a5a5a;
+}
 div.ros {
-    font-family: 'Slabo 27px', serif;
     font-size: 18px;
-    background: linear-gradient(to bottom, #004f00 0%,#698b69 100%);
-    padding: 30px;
-    margin-top: 20px;
+    background: linear-gradient(to bottom, #984897 0%,#c271be 100%);
+    padding: 40px;
+    margin-top: 40px;
     border-radius: 5px;
+    text-shadow: 1px 1px 1px #5a5a5a;
+    box-shadow: 3px 3px 10px rgba(34, 34, 34, 0.425);
 }
 img.ram {
     width: 400px;
     background: #FFF;
     padding: 20px;
-    border: 1px solid #000;
-    box-shadow: 3px 3px 10px #222;
+    box-shadow: 3px 3px 10px rgba(34, 34, 34, 0.25);
 }
 p {
 
