@@ -6,7 +6,6 @@
 
 /* Kör koden när webbsidan laddats klart */
 window.onload = start;
-
 function start() {
 
     /* Ta tag i elementen som vi vill jobba med */
