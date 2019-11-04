@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Roboto+Slab');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hela layouten */
+body {
+    background: url("./bilder/jeremy-thomas-98201-unsplash.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.kontainer {
+    width: 100%;
+    padding: 20px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Sidhuvudet */
+header {
+    color: #FFF;
+    font-family: 'Roboto Slab', serif;
+}
+header h1 {
+    font-size: 60px;
+    margin: 10px 0;
+}
+header nav {
+    background: linear-gradient(to right, #595959 0%,#e0cccc 100%);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0;
+}
+header li {
+    display: inline;
+    margin: 5px 10px;
+}
+header a {
+    text-decoration: none;
+    color: #FFF;
+}
+header a:hover {
+    color: #805506;
+}
+
+/* Sidans innehåll */
+main .innehall {
+    background-color:rgba(255, 255, 255, 0.733);
+    border-radius: 5px;
+    padding: 20px;
+    grid-area: innehall;
+}
+main img {
+    width: 80%;
+}
+main a {
+    text-decoration: none;
+    color: chocolate;
+}
+
+/* Sidebar */
+main aside {
+    grid-area: sidebar;
+}
+main aside section {
+    background-color: rgba(255, 255, 255, 0.733);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+main aside li {
+    list-style: none;
+}
+main aside a {
+    text-decoration: none;
+    color: chocolate;
+}
+
+/* Sidfoten */
+footer {
+    padding: 20px 0;
+}
+
+/* Responsiv layout */
+@media (min-width: 640px) {
+    main {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 3fr 1fr;
+        justify-content: space-between;
+        grid-template-areas: 
+        "innehall sidebar";
+    }
+}
+@media (min-width: 960px) {
+    .kontainer {
+        width: 960px;
+        padding: 0;
+        margin: auto;
+        font-family: 'PT Sans', sans-serif;
+    }
+    main {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 650px 280px;
+        justify-content: space-between;
+        grid-template-areas: 
+        "innehall sidebar";
+    }
+}

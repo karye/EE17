@@ -1,0 +1,25 @@
+body {
+    background: url("./bilder/beach.jpg");
+    font-family: sans-serif;
+    color: #FFF;
+}
+h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 150px 0 0 150px;
+}
+h2 {
+    font-size: 40px;
+    margin: 50px 0 200px 150px;
+}
+a {
+    color: #FFF;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 2px solid #FFF;
+    background: purple;
+    text-decoration: none;
+    padding: 20px 50px 20px 50px;
+    border-radius: 10px;
+    margin-left: 600px;
+}

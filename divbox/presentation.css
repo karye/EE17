@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+/* prettier-ignore */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* prettier-ignore */
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+}
+div {
+    width: 600px;
+    height: 400px;
+    background: url("./bilder/seal.jpg");
+    background-size: cover;
+    border-radius: 20px;
+    font-family: 'Playfair Display', serif;
+    color: #FFF;
+    padding-left: 250px;
+    padding-top: 20px;
+    margin: 100px auto 0 auto;
+}
+h1 {
+    font-size: 60px;
+    text-shadow: 2px 2px 1px #000;
+}
+h2 {
+    font-size: 25px;
+    text-shadow: 2px 2px 1px #000;
+}
+h3 {
+    font-size: 30px;
+    text-shadow: 2px 2px 1px #000;
+    margin-top: 100px;
+}

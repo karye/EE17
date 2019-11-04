@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script&display=swap');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidans utseende */
+body {
+    background: url("./bilder/daggros.jpg");
+    background-size: 5000px;
+    background-attachment: fixed;
+}
+div.kontainer {
+    width: 800px;
+    padding: 40px;
+    color: #FFF;
+    background: #c36aba99;
+    margin: 20px auto;
+    border-radius: 5px;
+    font-family: 'Dancing Script', cursive;
+    
+}
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 3px 3px 5px #000;
+}
+h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 28px;
+    margin: 10px 50px;
+    text-shadow: 1px 1px 1px #5a5a5a;
+}
+div.ros {
+    font-size: 18px;
+    background: linear-gradient(to bottom, #984897 0%,#c271be 100%);
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px #5a5a5a;
+    box-shadow: 3px 3px 10px rgba(34, 34, 34, 0.425);
+}
+img.ram {
+    width: 400px;
+    background: #FFF;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(34, 34, 34, 0.25);
+}
+p {
+
+}
+.vanster {
+    float: left;
+    margin-right: 20px;
+}
+.hoger {
+    float: right;
+    margin-left: 20px;
+}
+hr {
+    clear: both;
+    visibility: hidden;
+}
+.textHoger {
+    text-align: right;
+}
